@@ -8,6 +8,5 @@ dependencies:
     - pandas
     - matplotlib
     - rst2pdf
-    - community
-    - python-louvain
+    - community>=0.16
     - seaborn
