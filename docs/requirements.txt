@@ -10,5 +10,6 @@ Jinja2<3.1
 rst2pdf
 pandas
 networkx
+seaborn
 community
 python-louvain
