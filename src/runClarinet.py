@@ -8,7 +8,7 @@ import numpy as np
 import networkx as nx
 import math
 import pickle
-import community
+from community import community_louvain
 import matplotlib.pyplot as plt
 import seaborn as sns
 import argparse
@@ -360,7 +360,7 @@ def clustering(G, path):
     """
     #Clustering
 
-    partition = community.best_partition(G)
+    partition = community_louvain.best_partition(G)
     centers = {}
     communities = {}
     G_main_com = G.copy()

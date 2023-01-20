@@ -11,4 +11,4 @@ rst2pdf
 pandas
 networkx
 seaborn
-community>=0.16
+python-louvain

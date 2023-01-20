@@ -22,7 +22,7 @@ setup(
         'networkx',
         'numpy',
         'pandas',
-        'community>=0.16',
+        'python-louvain',
         'seaborn',
         'rst2pdf',
         'seaborn',
