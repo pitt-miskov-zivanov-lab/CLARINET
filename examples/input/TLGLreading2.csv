@@ -1,0 +1,643 @@
+﻿regulator_name,regulator_id,database1,ID1,location1,element_type1,cell_type1,level1,regulated_name,regulated_id,database2,ID2,location2,element_type2,cell_type2,level2,interaction,score,kindscore,matchlevel,epistemicvalue,file_numbers,number,Regulator Variable Name,Regulated Variable Name,PaperID,,
+AG490,uaz_UAZ03983,uaz,UAZ03983,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,decreases,1,,,,,,,,PMC5548667,AG-490 induced apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,XIAP,uniprot_P98170,uniprot,P98170,,protein,,,decreases,1,,,,,,,,PMC5391076,apoptosis inhibitor XIAP,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,increases,1,,,,,,,,PMC5391076,positive-activation,
+BCLAF1,uniprot_Q9NYF8,uniprot,Q9NYF8,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC5391076,positive-activation,
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,decreases,1,,,,,,,,PMC5391076,apoptosis-related gene BCLAF1 induces apoptosis and represses transcription,negative-activation
+Fas_ligand,uniprot_P48023,uniprot,P48023,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC5617471,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC5617471,positive-activation,
+Stattic,pubchem_2779853,pubchem,2779853,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC5617471,"Stattic blocked IL-6 or IL-15 effects preventing STAT3 phosphorylation induction (Figure  XREF_FIG ) and the increase of Fas ligand transcription (Figure  XREF_FIG ), thus demonstrating that the induction of Fas ligand expression is mediated by P-STAT3",negative-activation
+IL6,uniprot_P05231,uniprot,P05231,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC5617471,"IL-6 or IL-15 effects preventing STAT3 phosphorylation induction (Figure  XREF_FIG ) and the increase of Fas ligand transcription (Figure  XREF_FIG ), thus demonstrating that the induction of Fas ligand expression is mediated by P-STAT3",negative-activation
+PNH,uniprot_Q9XGW1,uniprot,Q9XGW1,,protein,,,alemtuzumab,uaz_UAZ01281,uaz,UAZ01281,,protein,,,increases,1,,,,,,,,PMC4721315,positive-activation,
+Fas,uniprot_P25445,uniprot,P25445,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC2483444,positive-activation,
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,STAT,uniprot_P35610,uniprot,P35610,,protein,,,increases,1,,,,,,,,PMC5891179,positive-activation,
+STAT,uniprot_P35610,uniprot,P35610,,protein,,,coil,uniprot_P38432,uniprot,P38432,,protein,,,increases,1,,,,,,,,PMC5891179,positive-activation,
+metastasis,mesh_D009362,mesh,D009362,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC5891179,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,IL,pubchem_7019083,pubchem,7019083,,simple-chemical,,,increases,1,,,,,,,,PMC5891179,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,VEGF,uniprot_P15692,uniprot,P15692,,protein,,,increases,1,,,,,,,,PMC5891179,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,IL-15 blockade by BNZ-1,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,IL2,uniprot_P60568,uniprot,P60568,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,IL15,uniprot_P40933,uniprot,P40933,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,HuMikB1,uaz_UAZ04007,uaz,UAZ04007,,protein,,,decreases,1,,,,,,,,PMC6478569,Hu-Mikβ1 blocked trans-presentation of IL-15,negative-activation
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,decreases,1,,,,,,,,PMC6478569,IL-15 mediated proliferation,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,proliferation of the cells was completely inhibited by BNZ-1,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,IL3,uniprot_P08700,uniprot,P08700,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,decreases,1,,,,,,,,PMC6478569,IL-15 mediated proliferation,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,Cell_viability,mesh_D002470,mesh,D002470,,bioprocess,,,decreases,1,,,,,,,,PMC6478569,"Cell viability decreased in the absence of cytokine supplementation and cell numbers increased upon cytokine addition in a dose-dependent manner, indicating the dependence of survival and proliferation",negative-activation
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,cell_expansion,go_GO:0016049,go,GO:0016049,,bioprocess,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,cell_expansion,go_GO:0016049,go,GO:0016049,,bioprocess,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,cell_survival,mesh_D002470,mesh,D002470,,bioprocess,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 can significantly inhibit IL-2 and IL-15,negative-activation
+IL2,uniprot_P60568,uniprot,P60568,,protein,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 can significantly inhibit IL-2,negative-activation
+IL2,uniprot_P60568,uniprot,P60568,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC6478569,IL-2 mediated activation of STAT3,negative-activation
+Akt,be_AKT,be,AKT,,family,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 incompletely blocked Akt,negative-activation
+ERK,be_ERK,be,ERK,,family,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 incompletely blocked Akt and ERK,negative-activation
+BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,annexin_V,uniprot_P08758,uniprot,P08758,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,NKL,uniprot_Q9BZE0,uniprot,Q9BZE0,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 inhibited proliferation,negative-activation
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 at 10 μM inhibited this ex vivo proliferation,negative-activation
+CD4,uniprot_P01730,uniprot,P01730,,protein,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 significantly decreased percentages and total numbers of CD3 + CD4,negative-activation
+CD25,uniprot_P01589,uniprot,P01589,,protein,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 significantly decreased percentages and total numbers of CD3 + CD4 + CD25,negative-activation
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 effectively inhibited the in vivo proliferation of CD8+ T cells in an IL-15,negative-activation
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,cell_viability,mesh_D002470,mesh,D002470,,bioprocess,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+IL3,uniprot_P08700,uniprot,P08700,,protein,,,proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,decreases,1,,,,,,,,PMC6478569,IL-3 mediated proliferation,negative-activation
+IL2,uniprot_P60568,uniprot,P60568,,protein,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 reduced the ability of both IL-2,negative-activation
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,decreases,1,,,,,,,,PMC6478569,BNZ-1 reduced the ability of both IL-2 and IL-15,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,BNZ1,uaz_UAZ04010,uaz,UAZ04010,,protein,,,increases,1,,,,,,,,PMC6478569,positive-activation,
+PRCA,uniprot_C7LYP8,uniprot,C7LYP8,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC4317942,positive-activation,
+IL15,uniprot_P40933,uniprot,P40933,,protein,,,antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,increases,1,,,,,,,,PMC3213185,positive-activation,
+PDGF,be_PDGF,be,PDGF,,family,,,antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,increases,1,,,,,,,,PMC3213185,positive-activation,
+cell_proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,mitogenactivated_protein_kinase,be_MAPK,be,MAPK,,family,,,increases,1,,,,,,,,PMC3213185,positive-activation,
+IFNG,uniprot_P01579,uniprot,P01579,,protein,,,SMAD,be_SMAD,be,SMAD,,family,,,decreases,1,,,,,,,,PMC3213185,IFNG is also inhibited by the node SMAD,negative-activation
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC3213185,STAT3 or over-expression of Ceramide in deregulated CTLs restores their activation induced cell death,negative-activation
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,Ceramide,pubchem_5283563,pubchem,5283563,,simple-chemical,,,decreases,1,,,,,,,,PMC3213185,Ceramide in deregulated CTLs restores their activation induced cell death,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC3213185,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC3213185,positive-activation,
+MCL1,uniprot_Q07820,uniprot,Q07820,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC3213185,positive-activation,
+Fas,uniprot_P25445,uniprot,P25445,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC3213185,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,SPHK1,uniprot_Q9NYA1,uniprot,Q9NYA1,,protein,,,decreases,1,,,,,,,,PMC3213185,SPHK1 inhibition by using chemical inhibitors significantly induces apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,RAS,pfam_PF00071,pfam,PF00071,,family,,,decreases,1,,,,,,,,PMC3213185,"RAS through introducing a dominant negative form of RAS, or inhibition of MEK or ERK through chemical inhibitors, induces apoptosis",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,decreases,1,,,,,,,,PMC3213185,"JAK  XREF_BIBR , PI3K  XREF_BIBR  or NFκB  XREF_BIBR  through chemical inhibitors induces apoptosis",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,PI3K,be_PI3K,be,PI3K,,protein,,,decreases,1,,,,,,,,PMC3213185,PI3K  XREF_BIBR  or NFκB  XREF_BIBR  through chemical inhibitors induces apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,IL2RBT,uaz_UAZ03887,uaz,UAZ03887,,protein,,,decreases,1,,,,,,,,PMC3213185,"IL2RBT, or IL2RB knockout can lead to apoptosis",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,MEK,be_MEK,be,MEK,,family,,,decreases,1,,,,,,,,PMC3213185,"MEK, ERK, IL2RBT, or IL2RB knockout can lead to apoptosis",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,ERK,be_ERK,be,ERK,,family,,,decreases,1,,,,,,,,PMC3213185,"ERK, IL2RBT, or IL2RB knockout can lead to apoptosis",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,IL2RB,uniprot_P14784,uniprot,P14784,,protein,,,decreases,1,,,,,,,,PMC3213185,IL2RB knockout can lead to apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,RAS,pfam_PF00071,pfam,PF00071,,family,,,decreases,1,,,,,,,,PMC3213185,"RAS, MEK, ERK, IL2RBT, or IL2RB knockout can lead to apoptosis",negative-activation
+TCR,uniprot_P04234,uniprot,P04234,,protein,,,CTLA4,uniprot_P16410,uniprot,P16410,,protein,,,decreases,1,,,,,,,,PMC3213185,inhibition of TCR by CTLA4,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,increases,1,,,,,,,,PMC7193483,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,increases,1,,,,,,,,PMC7193483,positive-activation,
+CD8,be_CD8,be,CD8,,family,,,miR146b_promoter,uaz_UAZ04685,uaz,UAZ04685,,protein,,,decreases,1,,,,,,,,PMC7193483,miR-146b promoter methylation prevents miR-146b expression in CD8,negative-activation
+FasL,uniprot_P48023,uniprot,P48023,,protein,,,HuR,uniprot_Q15717,uniprot,Q15717,,protein,,,increases,1,,,,,,,,PMC7193483,positive-activation,
+CD8,uaz_UAZ01273,uaz,UAZ01273,,protein,,,CD8,be_CD8,be,CD8,,family,,,decreases,1,,,,,,,,PMC4742196,CD8 Treg suppress responses of both CD8+,negative-activation
+CD4,uaz_UAZ01272,uaz,UAZ01272,,protein,,,CD8,be_CD8,be,CD8,,family,,,decreases,1,,,,,,,,PMC4742196,CD8 Treg suppress responses of both CD8+ and CD4+,negative-activation
+Fas,uniprot_P25445,uniprot,P25445,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC4742196,positive-activation,
+FAS,uniprot_P25445,uniprot,P25445,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC4742196,positive-activation,
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,RAD21,uniprot_O60216,uniprot,O60216,,protein,,,increases,1,,,,,,,,PMC3877422,positive-activation,
+CXCR4,uniprot_P61073,uniprot,P61073,,protein,,,SLIT2,uniprot_O94813,uniprot,O94813,,protein,,,increases,1,,,,,,,,PMC3877422,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC3877422,positive-activation,
+FGR,uniprot_P09769,uniprot,P09769,,protein,,,BCRABL,uaz_UAZ03599,uaz,UAZ03599,,protein,,,increases,1,,,,,,,,PMC3877422,positive-activation,
+FAS,uniprot_P25445,uniprot,P25445,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC3877422,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,BCL11B,uniprot_Q9C0K0,uniprot,Q9C0K0,,protein,,,increases,1,,,,,,,,PMC3877422,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,DCs,pubchem_6234,pubchem,6234,,simple-chemical,,,decreases,1,,,,,,,,PMC3877422,"DCs, but also of resting T cells with blocking NRP1 antibodies inhibited the DC-induced proliferation",negative-activation
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,STAT,uniprot_P35610,uniprot,P35610,,protein,,,increases,1,,,,,,,,PMC7040228,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC7040228,STAT3 was observed to restore LGL apoptosis,negative-activation
+DSBs,uaz_UAZ04821,uaz,UAZ04821,,protein,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+p53,uniprot_P04637,uniprot,P04637,,protein,,,cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+Fig,uniprot_Q9HD26,uniprot,Q9HD26,,protein,,,TCL1,uniprot_O95988,uniprot,O95988,,protein,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+MTCP1,uniprot_P56277,uniprot,P56277,,protein,,,TCL1,uniprot_O95988,uniprot,O95988,,protein,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+TCL1B,uniprot_O95988,uniprot,O95988,,protein,,,TCL1,uniprot_O95988,uniprot,O95988,,protein,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+ROS,chebi_CHEBI:26523,chebi,CHEBI:26523,,simple-chemical,,,TCL1A,uniprot_P56279,uniprot,P56279,,protein,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Panobinostat,pubchem_6918837,pubchem,6918837,,simple-chemical,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Idasanutlin,uaz_UAZ04780,uaz,UAZ04780,,protein,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+DDR,pfam_PF08841,pfam,PF08841,,family,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+DDR,pfam_PF08841,pfam,PF08841,,family,,,ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,increases,1,,,,,,,,PMC5814445,positive-activation,
+histones,be_Histone,be,Histone,,family,,,DAC,uniprot_P22760,uniprot,P22760,,protein,,,decreases,1,,,,,,,,PMC5814445,DAC inhibition of histones,negative-activation
+Abs,uniprot_Q9UJV9,uniprot,Q9UJV9,,protein,,,antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,increases,1,,,,,,,,PMC4616464,positive-activation,
+sensor,pfam_PF13796,pfam,PF13796,,family,,,exocytosis,go_GO:0006887,go,GO:0006887,,bioprocess,,,increases,1,,,,,,,,PMC5419584,positive-activation,
+cAMP,uniprot_P49913,uniprot,P49913,,protein,,,exocytosis,go_GO:0006887,go,GO:0006887,,bioprocess,,,increases,1,,,,,,,,PMC5419584,positive-activation,
+exocytosis,go_GO:0006887,go,GO:0006887,,bioprocess,,,calcium,pubchem_5460341,pubchem,5460341,,simple-chemical,,,increases,1,,,,,,,,PMC5419584,positive-activation,
+AKT,be_AKT,be,AKT,,family,,,MAPK,be_ERK,be,ERK,,family,,,increases,1,,,,,,,,PMC5419584,positive-activation,
+AKT,be_AKT,be,AKT,,family,,,MAPK,be_ERK,be,ERK,,family,,,increases,1,,,,,,,,PMC5419584,positive-activation,
+transport,go_GO:0006810,go,GO:0006810,,bioprocess,,,Akt1,uniprot_P31749,uniprot,P31749,,protein,,,increases,1,,,,,,,,PMC5732835,positive-activation,
+cell_proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,NBS1,uniprot_O60934,uniprot,O60934,,protein,,,increases,1,,,,,,,,PMC5732835,positive-activation,
+CD26,uniprot_P27487,uniprot,P27487,,protein,,,CD7,uniprot_P09564,uniprot,P09564,,protein,,,decreases,1,,,,,,,,PMC5732835,is aberrant loss of CD7 and CD26,negative-activation
+CD26,uniprot_P27487,uniprot,P27487,,protein,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,decreases,1,,,,,,,,PMC5732835,is aberrant loss of CD7 and CD26,negative-activation
+CD7,uniprot_P09564,uniprot,P09564,,protein,,,CD7,uniprot_P09564,uniprot,P09564,,protein,,,decreases,1,,,,,,,,PMC5732835,is aberrant loss of CD7,negative-activation
+CD7,uniprot_P09564,uniprot,P09564,,protein,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,decreases,1,,,,,,,,PMC5732835,is aberrant loss of CD7 and CD26,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,MK2206,uaz_UAZ03543,uaz,UAZ03543,,protein,,,decreases,1,,,,,,,,PMC5732835,MK-2206 was able to induce dose-dependent apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,AKT_inhibitor,uaz_UAZ00178,uaz,UAZ00178,,simple-chemical,,,decreases,1,,,,,,,,PMC5732835,"AKT inhibitor, MK-2206 was able to induce dose-dependent apoptosis",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,decreases,1,,,,,,,,PMC5732835,"cell growth, increased apoptosis",negative-activation
+MEC04,uaz_UAZ04947,uaz,UAZ04947,,protein,,,CP690550,uaz_UAZ04929,uaz,UAZ04929,,protein,,,decreases,1,,,,,,,,PMC5732835,"CP-690,550 was tested in a human NKCL xenograft mouse model, and deactivate the dissemination of MEC04",negative-activation
+transport,go_GO:0006810,go,GO:0006810,,bioprocess,,,Akt1,uniprot_P31749,uniprot,P31749,,protein,,,increases,1,,,,,,,,PMC5732835,positive-activation,
+cell_proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,NBS1,uniprot_O60934,uniprot,O60934,,protein,,,increases,1,,,,,,,,PMC5732835,positive-activation,
+CD26,uniprot_P27487,uniprot,P27487,,protein,,,CD7,uniprot_P09564,uniprot,P09564,,protein,,,decreases,1,,,,,,,,PMC5732835,is aberrant loss of CD7 and CD26,negative-activation
+CD26,uniprot_P27487,uniprot,P27487,,protein,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,decreases,1,,,,,,,,PMC5732835,is aberrant loss of CD7 and CD26,negative-activation
+CD7,uniprot_P09564,uniprot,P09564,,protein,,,CD7,uniprot_P09564,uniprot,P09564,,protein,,,decreases,1,,,,,,,,PMC5732835,is aberrant loss of CD7,negative-activation
+CD7,uniprot_P09564,uniprot,P09564,,protein,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,decreases,1,,,,,,,,PMC5732835,is aberrant loss of CD7 and CD26,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,MK2206,uaz_UAZ03543,uaz,UAZ03543,,protein,,,decreases,1,,,,,,,,PMC5732835,MK-2206 was able to induce dose-dependent apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,AKT_inhibitor,uaz_UAZ00178,uaz,UAZ00178,,simple-chemical,,,decreases,1,,,,,,,,PMC5732835,"AKT inhibitor, MK-2206 was able to induce dose-dependent apoptosis",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,decreases,1,,,,,,,,PMC5732835,"cell growth, increased apoptosis",negative-activation
+MEC04,uaz_UAZ04947,uaz,UAZ04947,,protein,,,CP690550,uaz_UAZ04929,uaz,UAZ04929,,protein,,,decreases,1,,,,,,,,PMC5732835,"CP-690,550 was tested in a human NKCL xenograft mouse model, and deactivate the dissemination of MEC04",negative-activation
+IL4,uniprot_P05112,uniprot,P05112,,protein,,,PTCLs,uaz_UAZ05036,uaz,UAZ05036,,protein,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+PTCL,uaz_UAZ04906,uaz,UAZ04906,,protein,,,Spn,uniprot_O75398,uniprot,O75398,,protein,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+TCR,uniprot_P04234,uniprot,P04234,,protein,,,proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+cell_proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,TCR,uniprot_P04234,uniprot,P04234,,protein,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+TCR,uniprot_P04234,uniprot,P04234,,protein,,,calcineurin_inhibitor,uniprot_Q9Y6J0,uniprot,Q9Y6J0,,protein,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+CD1d,uniprot_P15813,uniprot,P15813,,protein,,,TCR,uniprot_P04234,uniprot,P04234,,protein,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+cell_expansion,go_GO:0016049,go,GO:0016049,,bioprocess,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+TCR,uniprot_P04234,uniprot,P04234,,protein,,,antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+TCR,uniprot_P04234,uniprot,P04234,,protein,,,ITKSYK,uaz_UAZ05066,uaz,UAZ05066,,protein,,,increases,1,,,,,,,,PMC4854725,positive-activation,
+CD8,be_CD8,be,CD8,,family,,,STAT,uniprot_P35610,uniprot,P35610,,protein,,,increases,1,,,,,,,,PMC5803196,positive-activation,
+CAR,uniprot_P36575,uniprot,P36575,,protein,,,CD19,uniprot_P15391,uniprot,P15391,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+CAR,uniprot_P36575,uniprot,P36575,,protein,,,CAR,uniprot_P36575,uniprot,P36575,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+cytokine_production,go_GO:0001816,go,GO:0001816,,bioprocess,,,CD30,uniprot_P28908,uniprot,P28908,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,CD30,uniprot_P28908,uniprot,P28908,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+CD30,uniprot_P28908,uniprot,P28908,,protein,,,CAR,uniprot_P36575,uniprot,P36575,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+TCR,uniprot_P04234,uniprot,P04234,,protein,,,TRAC,uniprot_P01848,uniprot,P01848,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+CD3,be_CD3,be,CD3,,protein,,,TRAC,uniprot_P01848,uniprot,P01848,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+danger,uniprot_Q8IWB1,uniprot,Q8IWB1,,protein,,,heat,pfam_PF02985,pfam,PF02985,,family,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,CAR,uniprot_P36575,uniprot,P36575,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,CAR,uniprot_P36575,uniprot,P36575,,protein,,,increases,1,,,,,,,,PMC6936092,positive-activation,
+CD20,uniprot_P11836,uniprot,P11836,,protein,,,rituximab,uaz_UAZ01285,uaz,UAZ01285,,protein,,,decreases,1,,,,,,,,PMC6936092,rituximab can eliminate CD20,negative-activation
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC7016966,STAT3 negatively regulates JAK2,negative-activation
+MPN,uniprot_Q9BQR3,uniprot,Q9BQR3,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC7016966,STAT3 negatively regulates JAK2 V617F -driven MPN,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,KIT,uniprot_P10721,uniprot,P10721,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,KIT,uniprot_P10721,uniprot,P10721,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,KIT,uniprot_P10721,uniprot,P10721,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,KIT,uniprot_P10721,uniprot,P10721,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,FLT3,uniprot_P36888,uniprot,P36888,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,KIT_receptors,uaz_UAZ05201,uaz,UAZ05201,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+autophagy,go_GO:0006914,go,GO:0006914,,bioprocess,,,KIT,uniprot_P10721,uniprot,P10721,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+autophagy,go_GO:0006914,go,GO:0006914,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+immune_response,go_GO:0006955,go,GO:0006955,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC7016966,STAT3 also stimulates the antitumoral immune response,negative-activation
+AML,uniprot_Q6PF39,uniprot,Q6PF39,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC7016966,STAT3 would not only block the growth and survival of AML,negative-activation
+STAT5,be_STAT5,be,STAT5,,family,,,FLT3ITD,uaz_UAZ05211,uaz,UAZ05211,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+cell_survival,mesh_D002470,mesh,D002470,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,ROS,chebi_CHEBI:26523,chebi,CHEBI:26523,,simple-chemical,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC7016966,STAT5 suppresses human Ph+ ALL cell growth,negative-activation
+STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,acid,pubchem_444212,pubchem,444212,,simple-chemical,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC7016966,STAT3 expression/activity in ABC-DLBCL cells abrogates lymphoma cell growth and triggers apoptosis,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,IL6,uniprot_P05231,uniprot,P05231,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,IL6,uniprot_P05231,uniprot,P05231,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,BCL2,uniprot_P10415,uniprot,P10415,,family,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,decreases,1,,,,,,,,PMC7016966,STAT5-mediated transcription,negative-activation
+STAT3,uaz_UAZ05192,uaz,UAZ05192,,protein,,,TKOs,uaz_UAZ05271,uaz,UAZ05271,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,JAK2,uniprot_O60674,uniprot,O60674,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,JAK2,uniprot_O60674,uniprot,O60674,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,JAK2,uniprot_O60674,uniprot,O60674,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,Gab2,uniprot_Q9UQC2,uniprot,Q9UQC2,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,NOX,uniprot_Q9Y5S8,uniprot,Q9Y5S8,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,NADPHoxidase,be_NADPH_oxidase,be,NADPH_oxidase,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,NADPHoxidase,be_NADPH_oxidase,be,NADPH_oxidase,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,NOX,uniprot_Q9Y5S8,uniprot,Q9Y5S8,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+ROS,chebi_CHEBI:26523,chebi,CHEBI:26523,,simple-chemical,,,NADPHoxidase,be_NADPH_oxidase,be,NADPH_oxidase,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+ROS,chebi_CHEBI:26523,chebi,CHEBI:26523,,simple-chemical,,,NOX,uniprot_Q9Y5S8,uniprot,Q9Y5S8,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,PYSTAT5,uaz_UAZ05204,uaz,UAZ05204,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+ROS,chebi_CHEBI:26523,chebi,CHEBI:26523,,simple-chemical,,,PYSTAT5,uaz_UAZ05204,uaz,UAZ05204,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+BCRABL,uaz_UAZ03599,uaz,UAZ03599,,protein,,,PYSTAT5,uaz_UAZ05204,uaz,UAZ05204,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+KRas,uniprot_P01116,uniprot,P01116,,protein,,,PS,pubchem_7408258,pubchem,7408258,,simple-chemical,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,uSTAT5,uniprot_P42229,uniprot,P42229,,protein,,,decreases,1,,,,,,,,PMC7016966,uSTAT5 activity/expression induced ROS production and apoptosis,negative-activation
+ROS,chebi_CHEBI:26523,chebi,CHEBI:26523,,simple-chemical,,,uSTAT5,uniprot_P42229,uniprot,P42229,,protein,,,decreases,1,,,,,,,,PMC7016966,uSTAT5 activity/expression induced ROS,negative-activation
+KIT,uniprot_P10721,uniprot,P10721,,protein,,,crenolanib,uaz_UAZ05248,uaz,UAZ05248,,protein,,,decreases,1,,,,,,,,PMC7016966,"crenolanib, and tandutinib were also employed to inhibit KIT",negative-activation
+KIT,uniprot_P10721,uniprot,P10721,,protein,,,Midostaurin,pubchem_9829523,pubchem,9829523,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,"Midostaurin, crenolanib, and tandutinib were also employed to inhibit KIT",negative-activation
+KIT,uniprot_P10721,uniprot,P10721,,protein,,,tandutinib,pubchem_3038522,pubchem,3038522,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,tandutinib were also employed to inhibit KIT,negative-activation
+KIT,uniprot_P10721,uniprot,P10721,,protein,,,DCC2618,uaz_UAZ05286,uaz,UAZ05286,,protein,,,decreases,1,,,,,,,,PMC7016966,KIT D816V  inhibitors including avapritinib (BLU-285) and DCC-2618,negative-activation
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,pacritinib,pubchem_46216796,pubchem,46216796,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,JAK2-specific inhibitors such as pacritinib,negative-activation
+HL,uniprot_P11150,uniprot,P11150,,protein,,,Fedratinib,uaz_UAZ05225,uaz,UAZ05225,,protein,,,decreases,1,,,,,,,,PMC7016966,Fedratinib also blocks the growth of HL,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,Curcumin,pubchem_969516,pubchem,969516,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,Curcumin was shown to block STAT3,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC7016966,block STAT3 and/or STAT5,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,FLLL32,uaz_UAZ05279,uaz,UAZ05279,,protein,,,decreases,1,,,,,,,,PMC7016966,"FLLL32, one of these analogs, was shown to inhibit P-Y-STAT3 and growth of MM",negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,EC804,uaz_UAZ05310,uaz,UAZ05310,,protein,,,decreases,1,,,,,,,,PMC7016966,"EC804, a synthetic derivative of indirubin, an active component in a traditional Chinese medicine formulation, was reported to inhibit STAT3",negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC7016966,inhibit STAT3 and/or STAT5,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,indirubin,uaz_UAZ05296,uaz,UAZ05296,,protein,,,decreases,1,,,,,,,,PMC7016966,"indirubin, an active component in a traditional Chinese medicine formulation, was reported to inhibit STAT3",negative-activation
+STAT5,be_STAT5,be,STAT5,,family,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,pimozide was found to inhibit STAT5,negative-activation
+STAT3,uaz_UAZ05185,uaz,UAZ05185,,protein,,,Pyrimethamine,pubchem_4993,pubchem,4993,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,Pyrimethamine inhibited P-Y-STAT3,negative-activation
+MPN,uniprot_Q9BQR3,uniprot,Q9BQR3,,protein,,,Pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,Pimozide was shown to inhibit P-Y-STAT5 and survival of CML and MPN,negative-activation
+STAT3,uaz_UAZ05185,uaz,UAZ05185,,protein,,,Pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,Pimozide also inhibits P-Y-STAT3,negative-activation
+STAT5A,uniprot_P42229,uniprot,P42229,,protein,,,PPAR,uniprot_Q07869,uniprot,Q07869,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,PPAR,uniprot_Q07869,uniprot,Q07869,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,PPAR,uniprot_Q07869,uniprot,Q07869,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,PPAR,uniprot_Q07869,uniprot,Q07869,,protein,,,decreases,1,,,,,,,,PMC7016966,PPARγ agonists were found to inhibit the transcriptional activity of STAT3,negative-activation
+STAT5,uaz_UAZ05204,uaz,UAZ05204,,protein,,,AC4130,uaz_UAZ05235,uaz,UAZ05235,,site,,,decreases,1,,,,,,,,PMC7016966,AC-4-130 did not exhibit off-target kinase activity and suppressed P-Y-STAT5,negative-activation
+pCAF_inhibitor,uaz_UAZ05187,uaz,UAZ05187,,simple-chemical,,,AC4130,uaz_UAZ05235,uaz,UAZ05235,,site,,,decreases,1,,,,,,,,PMC7016966,AC-4-130 was also shown to synergistically increase the cytotoxic effect of the JAK1/2 inhibitor ruxolitinib and the p300/pCAF inhibitor,negative-activation
+ruxolitinib,pubchem_25126798,pubchem,25126798,,simple-chemical,,,AC4130,uaz_UAZ05235,uaz,UAZ05235,,site,,,decreases,1,,,,,,,,PMC7016966,AC-4-130 was also shown to synergistically increase the cytotoxic effect of the JAK1/2 inhibitor ruxolitinib,negative-activation
+JAK,uaz_UAZ03900,uaz,UAZ03900,,simple-chemical,,,AC4130,uaz_UAZ05235,uaz,UAZ05235,,site,,,decreases,1,,,,,,,,PMC7016966,AC-4-130 was also shown to synergistically increase the cytotoxic effect of the JAK1/2 inhibitor,negative-activation
+p300,uniprot_Q09472,uniprot,Q09472,,protein,,,AC4130,uaz_UAZ05235,uaz,UAZ05235,,site,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+Ph,uniprot_P01298,uniprot,P01298,,protein,,,IST5002,uaz_UAZ05194,uaz,UAZ05194,,protein,,,decreases,1,,,,,,,,PMC7016966,IST5-002 was found to reduce leukemia development in PDX models of Ph,negative-activation
+STA21,uaz_UAZ04640,uaz,UAZ04640,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,C1889,uaz_UAZ05278,uaz,UAZ05278,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STATTIC,pubchem_2779853,pubchem,2779853,,simple-chemical,,,decreases,1,,,,,,,,PMC7016966,STATTIC suppressed growth and survival of NK/T cell lymphoma cell lines expressing the STAT3,negative-activation
+STAT3,uaz_UAZ05185,uaz,UAZ05185,,protein,,,OPB31121,uaz_UAZ05196,uaz,UAZ05196,,protein,,,decreases,1,,,,,,,,PMC7016966,OPB-31121 was shown to inhibit P-Y-STAT3,negative-activation
+STAT5,uaz_UAZ05204,uaz,UAZ05204,,protein,,,OPB31121,uaz_UAZ05196,uaz,UAZ05196,,protein,,,decreases,1,,,,,,,,PMC7016966,OPB-31121 was shown to inhibit P-Y-STAT3 and P-Y-STAT5,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,SD36,uaz_UAZ05186,uaz,UAZ05186,,protein,,,decreases,1,,,,,,,,PMC7016966,"SD-36, a proteolysis targeting chimera (PROTAC) that selectively degrades STAT3",negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,SD36,uaz_UAZ05186,uaz,UAZ05186,,protein,,,decreases,1,,,,,,,,PMC7016966,SD-36 was shown to induce STAT3,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,SD36,uaz_UAZ05186,uaz,UAZ05186,,protein,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+IL6,uniprot_P05231,uniprot,P05231,,protein,,,GQODN,uaz_UAZ05197,uaz,UAZ05197,,protein,,,decreases,1,,,,,,,,PMC7016966,GQ-ODN T40214 was shown to inhibit IL-6,negative-activation
+antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,CpGSTAT3_siRNA_conjugate,uaz_UAZ05241,uaz,UAZ05241,,protein,,,decreases,1,,,,,,,,PMC7016966,CpG-STAT3 siRNA conjugate stimulates systemic antitumor immunity and antigen,negative-activation
+CD8,be_CD8,be,CD8,,family,,,CpGSTAT3_siRNA_conjugate,uaz_UAZ05241,uaz,UAZ05241,,protein,,,decreases,1,,,,,,,,PMC7016966,CpG-STAT3 siRNA conjugate stimulates systemic antitumor immunity and antigen-specific activation of CD8,negative-activation
+immunity,go_GO:0006955,go,GO:0006955,,bioprocess,,,CpGSTAT3_siRNA_conjugate,uaz_UAZ05241,uaz,UAZ05241,,protein,,,decreases,1,,,,,,,,PMC7016966,CpG-STAT3 siRNA conjugate stimulates systemic antitumor immunity,negative-activation
+angiogenesis,go_GO:0001525,go,GO:0001525,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,increases,1,,,,,,,,PMC7016966,positive-activation,
+ruxolitinib,pubchem_25126798,pubchem,25126798,,simple-chemical,,,AC4130,uaz_UAZ05235,uaz,UAZ05235,,site,,,decreases,1,,,,,,,,PMC7016966,AC-4-130 increased the cytotoxicity of ruxolitinib,negative-activation
+IFN,uaz_UAZ05325,uaz,UAZ05325,,protein,,,IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ05325,uaz,UAZ05325,,protein,,,STAT1,uniprot_P42224,uniprot,P42224,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ05325,uaz,UAZ05325,,protein,,,JAK2,uniprot_O60674,uniprot,O60674,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,decreases,1,,,,,,,,PMC5825082,STAT5b suppressed the activation of both STAT1,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,decreases,1,,,,,,,,PMC5825082,STAT5b suppressed the activation of both STAT1 and STAT3,negative-activation
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,decreases,1,,,,,,,,PMC5825082,"IFN-γ producing cells, such as T helper cells 1 (Th1 cells) or T cell receptor (TCR) engaged T cells, exhibit decreased receptor expression during critical times to prevent apoptosis",negative-activation
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,IL2,uniprot_P60568,uniprot,P60568,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,JAK2,uniprot_O60674,uniprot,O60674,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+pSTAT1,uniprot_P42224,uniprot,P42224,,protein,,,IFN,uaz_UAZ01280,uaz,UAZ01280,,gene,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,decreases,1,,,,,,,,PMC5825082,STAT5b suppresses STAT1 and STAT3,negative-activation
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,decreases,1,,,,,,,,PMC5825082,STAT5b suppresses STAT1,negative-activation
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,decreases,1,,,,,,,,PMC5825082,STAT5b inhibits STAT1,negative-activation
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,decreases,1,,,,,,,,PMC5825082,SOCS1 induction would prevent the negative feedback regulation of IL-2-mediated IFN-γ,negative-activation
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,IFNGR,uniprot_P15260,uniprot,P15260,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,STAT5,be_STAT5,be,STAT5,,family,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT1,uniprot_P42224,uniprot,P42224,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT1,uniprot_P42224,uniprot,P42224,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+IL2,uniprot_P60568,uniprot,P60568,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+STAT5b,uniprot_P51692,uniprot,P51692,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,increases,1,,,,,,,,PMC5825082,positive-activation,
+infiltration,mesh_D009361,mesh,D009361,,bioprocess,,,methotrexate,pubchem_126941,pubchem,126941,,simple-chemical,,,increases,1,,,,,,,,PMC3886074,positive-activation,
+DR4,uniprot_O00220,uniprot,O00220,,protein,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,STAT5 inhibition induces TRAIL/DR4,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,STAT5 inhibition induces TRAIL/DR4 dependent apoptosis,negative-activation
+TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,STAT5 inhibition induces TRAIL,negative-activation
+PTCL,uaz_UAZ04906,uaz,UAZ04906,,protein,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,pimozide inhibits STAT5 in PTCL,negative-activation
+STAT5,be_STAT5,be,STAT5,,family,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,pimozide inhibits STAT5,negative-activation
+TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,TRAIL_receptor,uaz_UAZ05350,uaz,UAZ05350,,gene,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,pimozide inhibits STAT5,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+PTCL,uaz_UAZ04906,uaz,UAZ04906,,protein,,,STAT5,be_STAT5,be,STAT5,,family,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,Pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,Pimozide inhibits STAT5,negative-activation
+PTCL,uaz_UAZ04906,uaz,UAZ04906,,protein,,,Pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,Pimozide inhibits STAT5 in PTCL,negative-activation
+cell_viability,mesh_D002470,mesh,D002470,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,STAT5 knockdown and inhibition with pimozide induced apoptosis,negative-activation
+pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,decreases,1,,,,,,,,PMC5908286,pimozide induced apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,ZVADFMK,uaz_UAZ05343,uaz,UAZ05343,,protein,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,pancaspase_inhibitor,uaz_UAZ05354,uaz,UAZ05354,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,DR4,uniprot_O00220,uniprot,O00220,,protein,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,Pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,Pimozide inhibits STAT5,negative-activation
+STAT5,be_STAT5,be,STAT5,,family,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,pimozide inhibits STAT5,negative-activation
+pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,pimozide induced STAT5,negative-activation
+TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,pimozide inhibits STAT5,negative-activation
+STAT5,be_STAT5,be,STAT5,,family,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,pimozide inhibits STAT5 and support the utility of STAT5,negative-activation
+pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,decreases,1,,,,,,,,PMC5908286,pimozide induces apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,STAT5 inhibition with pimozide induces apoptosis,negative-activation
+cell_viability,mesh_D002470,mesh,D002470,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,decreases,1,,,,,,,,PMC5908286,pimozide reduces PTCL cell viability,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+TRAIL,uniprot_P50591,uniprot,P50591,,protein,,,cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,apoptosis induced by STAT5,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,STAT5 knockdown triggers apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,JAK_inhibitors,uaz_UAZ03907,uaz,UAZ03907,,simple-chemical,,,increases,1,,,,,,,,PMC5908286,positive-activation,
+pimozide,pubchem_16362,pubchem,16362,,simple-chemical,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,decreases,1,,,,,,,,PMC5908286,pimozide induces apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,STAT5 inhibition with pimozide induces apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,decreases,1,,,,,,,,PMC5908286,STAT5 induces apoptosis,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,Fas,uniprot_P25445,uniprot,P25445,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,Fas_ligand,uniprot_P48023,uniprot,P48023,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+Fas,uniprot_P25445,uniprot,P25445,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+TLGL,uaz_UAZ04612,uaz,UAZ04612,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+RCC,pubchem_10985033,pubchem,10985033,,simple-chemical,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+IL6,uniprot_P05231,uniprot,P05231,,protein,,,RCC,pubchem_10985033,pubchem,10985033,,simple-chemical,,,increases,1,,,,,,,,PMC6221671,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Fyn,uniprot_P06241,uniprot,P06241,,protein,,,decreases,1,,,,,,,,PMC5323146,Fyn phosphorylation and induces apoptosis,negative-activation
+cell_viability,mesh_D002470,mesh,D002470,,bioprocess,,,pyrimidine,pubchem_9260,pubchem,9260,,simple-chemical,,,decreases,1,,,,,,,,PMC5323146,pyrimidine compound reduced cell viability,negative-activation
+Alpha,pubchem_7409,pubchem,7409,,simple-chemical,,,Caspase,be_Caspase,be,Caspase,,family,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+Fas_Ligand,uniprot_P48023,uniprot,P48023,,protein,,,Caspase,be_Caspase,be,Caspase,,family,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+Apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Caspase,be_Caspase,be,Caspase,,family,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,resveratrol,pubchem_445154,pubchem,445154,,simple-chemical,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,resveratrol,pubchem_445154,pubchem,445154,,simple-chemical,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,resveratrol,pubchem_445154,pubchem,445154,,simple-chemical,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,miR125a3p,uaz_UAZ05380,uaz,UAZ05380,,protein,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+cell_viability,mesh_D002470,mesh,D002470,,bioprocess,,,miR125a3p,uaz_UAZ05380,uaz,UAZ05380,,protein,,,decreases,1,,,,,,,,PMC5323146,miR-125a-3p causes an arrest of cell cycle at G2/M stage and a decreases cell viability,negative-activation
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,Caspase,be_Caspase,be,Caspase,,family,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,FADD,uniprot_Q13158,uniprot,Q13158,,protein,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,CFLAR,uniprot_O15519,uniprot,O15519,,protein,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+caspase_3,uniprot_P42574,uniprot,P42574,,protein,,,death,pfam_PF00531,pfam,PF00531,,family,,,increases,1,,,,,,,,PMC5323146,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,Fyn,uniprot_P06241,uniprot,P06241,,protein,,,decreases,1,,,,,,,,PMC5323146,"Fyn phosphorylation by 4c pyrazolo[3,4-d]pyrimidine compound induces apoptosis and cell cycle",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Fyn,uniprot_P06241,uniprot,P06241,,protein,,,decreases,1,,,,,,,,PMC5323146,"Fyn phosphorylation by 4c pyrazolo[3,4-d]pyrimidine compound induces apoptosis",negative-activation
+oxygen,hmdb_HMDB01377,hmdb,HMDB01377,,simple-chemical,,,PI3K,be_PI3K,be,PI3K,,protein,,,decreases,1,,,,,,,,PMC7369308,"PI3Kγ pathway causes defects in the neutrophil slow-rolling, the release of granule proteins, and the production of reactive oxygen",negative-activation
+IFI,uaz_UAZ07945,uaz,UAZ07945,,protein,,,isavuconazole,pubchem_6918485,pubchem,6918485,,simple-chemical,,,decreases,1,,,,,,,,PMC7369308,isavuconazole was used for prophylaxis patients with hematologic malignancies or hematopoietic cell transplant recipients to prevent IFI,negative-activation
+death,pfam_PF00531,pfam,PF00531,,family,,,azole,pubchem_8027,pubchem,8027,,simple-chemical,,,increases,1,,,,,,,,PMC7369308,positive-activation,
+Th1,uniprot_Q8IXH7,uniprot,Q8IXH7,,protein,,,IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,increases,1,,,,,,,,PMC7369308,positive-activation,
+immunity,go_GO:0006955,go,GO:0006955,,bioprocess,,,trichothecenes,pubchem_45266518,pubchem,45266518,,simple-chemical,,,decreases,1,,,,,,,,PMC7369308,"trichothecenes, which causes tissue damage and suppress humoral and cellular immunity",negative-activation
+Fas,uniprot_P25445,uniprot,P25445,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC4147778,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,Hsp90,pfam_PF00183,pfam,PF00183,,family,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,CDK_inhibitors,uaz_UAZ08028,uaz,UAZ08028,,simple-chemical,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,mTOR,uniprot_P42345,uniprot,P42345,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+luciferase,uniprot_P08659,uniprot,P08659,,protein,,,IL6,uniprot_P05231,uniprot,P05231,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,IL6,uniprot_P05231,uniprot,P05231,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,BMS754807,pubchem_24785538,pubchem,24785538,,simple-chemical,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+insulin,uniprot_P08069,uniprot,P08069,,protein,,,BMS754807,pubchem_24785538,pubchem,24785538,,simple-chemical,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,insulinlike_growth_factor_1,uaz_UAZ08031,uaz,UAZ08031,,protein,,,decreases,1,,,,,,,,PMC5722580,insulin-like growth factor 1 receptor inhibitor BMS-754807 inhibited only mutant STAT3,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,insulinlike_growth_factor_1_receptor,uniprot_P08069,uniprot,P08069,,protein,,,decreases,1,,,,,,,,PMC5722580,insulin-like growth factor 1 receptor inhibitor BMS-754807 inhibited only mutant STAT3,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT3_inhibitors,uaz_UAZ03772,uaz,UAZ03772,,simple-chemical,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,IL6,uniprot_P05231,uniprot,P05231,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,IL6,uniprot_P05231,uniprot,P05231,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT,uniprot_P35610,uniprot,P35610,,protein,,,IL2,uniprot_P60568,uniprot,P60568,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,IL2,uniprot_P60568,uniprot,P60568,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uaz_UAZ08039,uaz,UAZ08039,,site,,,ruxolitinib,pubchem_25126798,pubchem,25126798,,simple-chemical,,,decreases,1,,,,,,,,PMC5722580,"ruxolitinib treatment only partially reduced P-STAT3 levels in STAT3 mutant cells, but completely inhibited P-STAT3",negative-activation
+cell_viability,mesh_D002470,mesh,D002470,,bioprocess,,,Hsp90,pfam_PF00183,pfam,PF00183,,family,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,Hsp90_inhibitor,uaz_UAZ03632,uaz,UAZ03632,,simple-chemical,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,mTOR_inhibitors,uaz_UAZ02042,uaz,UAZ02042,,simple-chemical,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,luciferase,uniprot_P08659,uniprot,P08659,,protein,,,increases,1,,,,,,,,PMC5722580,positive-activation,
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,erythropoietin,uniprot_P01588,uniprot,P01588,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,growth_hormone,uniprot_P01241,uniprot,P01241,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,IL2,uniprot_P60568,uniprot,P60568,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+JAK2,uniprot_O60674,uniprot,O60674,,protein,,,IL2,uniprot_P60568,uniprot,P60568,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+STAT4,uniprot_Q14765,uniprot,Q14765,,protein,,,IL2,uniprot_P60568,uniprot,P60568,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,IL23,uaz_UAZ07174,uaz,UAZ07174,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+IL12,be_IL12,be,IL12,,family,,,JAK2,uniprot_O60674,uniprot,O60674,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+STAT4,uniprot_Q14765,uniprot,Q14765,,protein,,,IL23,uaz_UAZ07174,uaz,UAZ07174,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+IL27,uniprot_Q8NEV9,uniprot,Q8NEV9,,protein,,,IL23,uaz_UAZ07174,uaz,UAZ07174,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+STAT4,uniprot_Q14765,uniprot,Q14765,,protein,,,IL12,be_IL12,be,IL12,,family,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+signal_transduction,go_GO:0007165,go,GO:0007165,,bioprocess,,,JAK2,uniprot_O60674,uniprot,O60674,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+metastasis,mesh_D009362,mesh,D009362,,bioprocess,,,JAK2_inhibitor,uaz_UAZ05200,uaz,UAZ05200,,simple-chemical,,,decreases,1,,,,,,,,PMC6861185,JAK2 inhibitor-mediated increase of tumor metastasis,negative-activation
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,IFN,uaz_UAZ03976,uaz,UAZ03976,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+ISGF3_complex,uaz_UAZ08080,uaz,UAZ08080,,protein,,,IFN,uaz_UAZ08079,uaz,UAZ08079,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+ISGF3_complex,uaz_UAZ08080,uaz,UAZ08080,,protein,,,IFN,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+ISGF3_complex,uaz_UAZ08080,uaz,UAZ08080,,protein,,,IFN,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,IFN,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+STAT1,uniprot_P42224,uniprot,P42224,,protein,,,IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,IL27R,uaz_UAZ08052,uaz,UAZ08052,,protein,,,decreases,1,,,,,,,,PMC6861185,IL-27R in mice leads to reduced NK cell-mediated IFN-γ,negative-activation
+STAT5,be_STAT5,be,STAT5,,family,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,decreases,1,,,,,,,,PMC6861185,STAT3 represses STAT5,negative-activation
+angiogenesis,go_GO:0001525,go,GO:0001525,,bioprocess,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+M1,pubchem_13019211,pubchem,13019211,,simple-chemical,,,IL12,be_IL12,be,IL12,,family,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+M1,pubchem_13019211,pubchem,13019211,,simple-chemical,,,STAT4,uniprot_Q14765,uniprot,Q14765,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,STAT4,uniprot_Q14765,uniprot,Q14765,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,VEGFA,uniprot_P15692,uniprot,P15692,,protein,,,decreases,1,,,,,,,,PMC6861185,"driving the expression of transcription factors pivotal for NK cell development (ID2, EOMES and T-BET) and regulating the expression of crucial effector molecules (perforin, granzymes and IFN-γ), STAT5 has been reported to suppress the expression of the pro-angiogenic factor VEGF-A",negative-activation
+TBET,uniprot_Q9UL17,uniprot,Q9UL17,,protein,,,VEGFA,uniprot_P15692,uniprot,P15692,,protein,,,decreases,1,,,,,,,,PMC6861185,"driving the expression of transcription factors pivotal for NK cell development (ID2, EOMES and T-BET) and regulating the expression of crucial effector molecules (perforin, granzymes and IFN-γ), STAT5 has been reported to suppress the expression of the pro-angiogenic factor VEGF-A",negative-activation
+EOMES,uniprot_O95936,uniprot,O95936,,protein,,,VEGFA,uniprot_P15692,uniprot,P15692,,protein,,,decreases,1,,,,,,,,PMC6861185,"driving the expression of transcription factors pivotal for NK cell development (ID2, EOMES and T-BET) and regulating the expression of crucial effector molecules (perforin, granzymes and IFN-γ), STAT5 has been reported to suppress the expression of the pro-angiogenic factor VEGF-A",negative-activation
+ID2,uniprot_Q02363,uniprot,Q02363,,protein,,,VEGFA,uniprot_P15692,uniprot,P15692,,protein,,,decreases,1,,,,,,,,PMC6861185,"driving the expression of transcription factors pivotal for NK cell development (ID2, EOMES and T-BET) and regulating the expression of crucial effector molecules (perforin, granzymes and IFN-γ), STAT5 has been reported to suppress the expression of the pro-angiogenic factor VEGF-A",negative-activation
+transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,STAT5,be_STAT5,be,STAT5,,family,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+STAT6,uniprot_P42226,uniprot,P42226,,protein,,,IL4,uniprot_P05112,uniprot,P05112,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+STAT6,uniprot_P42226,uniprot,P42226,,protein,,,IL13,uniprot_P35225,uniprot,P35225,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,IL4,uniprot_P05112,uniprot,P05112,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,IL4,uniprot_P05112,uniprot,P05112,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+antiIFN_mAb,uaz_UAZ08072,uaz,UAZ08072,,protein,,,IL5,uniprot_P05113,uniprot,P05113,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,SOCS6,uniprot_O14512,uniprot,O14512,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS6 negatively regulates JAK,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,SOCS6,uniprot_O14512,uniprot,O14512,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS6 negatively regulates JAK/STAT3,negative-activation
+CIS,uniprot_Q9NSE2,uniprot,Q9NSE2,,protein,,,IL15,uniprot_P40933,uniprot,P40933,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+CIS,uniprot_Q9NSE2,uniprot,Q9NSE2,,protein,,,IL2,uniprot_P60568,uniprot,P60568,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+IL12,be_IL12,be,IL12,,family,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS1 negatively regulates signaling of IFNs and IL-12,negative-activation
+IFN,uaz_UAZ03976,uaz,UAZ03976,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS1 negatively regulates signaling of IFNs,negative-activation
+antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,decreases,1,,,,,,,,PMC6861185,"SOCS1 negatively regulates signaling of IFNs and IL-12 ( XREF_BIBR ,  XREF_BIBR ) and plays an important role in DC and T cells suppressing antigen",negative-activation
+immunity,go_GO:0006955,go,GO:0006955,,bioprocess,,,SOCS1,uniprot_O15524,uniprot,O15524,,protein,,,decreases,1,,,,,,,,PMC6861185,"SOCS1 negatively regulates signaling of IFNs and IL-12 ( XREF_BIBR ,  XREF_BIBR ) and plays an important role in DC and T cells suppressing antigen-presentation and antitumor immunity",negative-activation
+STAT5,be_STAT5,be,STAT5,,family,,,SOCS2,uniprot_O14508,uniprot,O14508,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,Socs2deficiency,uaz_UAZ08081,uaz,UAZ08081,,protein,,,increases,1,,,,,,,,PMC6861185,positive-activation,
+gp130,uniprot_P40189,uniprot,P40189,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS3 inhibits gp130,negative-activation
+IL27,uniprot_Q8NEV9,uniprot,Q8NEV9,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,"SOCS3 inhibits gp130 receptor/STAT3 signaling by direct inhibition and/or ubiquitin-mediated degradation of the receptors or their associated JAK kinases (downstream of IL-6, IL-11, IL-27",negative-activation
+OSM,uniprot_P13725,uniprot,P13725,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,"SOCS3 inhibits gp130 receptor/STAT3 signaling by direct inhibition and/or ubiquitin-mediated degradation of the receptors or their associated JAK kinases (downstream of IL-6, IL-11, IL-27, OSM",negative-activation
+JAK,uaz_UA-BP-GGP-00072,uaz,UA-BP-GGP-00072,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS3 inhibits gp130 receptor/STAT3 signaling by direct inhibition and/or ubiquitin-mediated degradation of the receptors or their associated JAK,negative-activation
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS3 inhibits gp130 receptor/STAT3,negative-activation
+LIF,uniprot_P15018,uniprot,P15018,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,"SOCS3 inhibits gp130 receptor/STAT3 signaling by direct inhibition and/or ubiquitin-mediated degradation of the receptors or their associated JAK kinases (downstream of IL-6, IL-11, IL-27, OSM and LIF",negative-activation
+ubiquitin,uniprot_P0CG47,uniprot,P0CG47,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS3 inhibits gp130 receptor/STAT3 signaling by direct inhibition and/or ubiquitin,negative-activation
+IL6,uniprot_P05231,uniprot,P05231,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS3 inhibits gp130 receptor/STAT3 signaling by direct inhibition and/or ubiquitin-mediated degradation of the receptors or their associated JAK kinases (downstream of IL-6,negative-activation
+gp130_receptor,uaz_UAZ08056,uaz,UAZ08056,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS3 inhibits gp130 receptor,negative-activation
+IL11,uniprot_P20809,uniprot,P20809,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,"SOCS3 inhibits gp130 receptor/STAT3 signaling by direct inhibition and/or ubiquitin-mediated degradation of the receptors or their associated JAK kinases (downstream of IL-6, IL-11",negative-activation
+STAT4,uniprot_Q14765,uniprot,Q14765,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS3 was also shown to negatively regulate IL-12-induced STAT4,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,CRISPR,uaz_UAZ00924,uaz,UAZ00924,,protein,,,decreases,1,,,,,,,,PMC6861185,CRISPR/Cas9-mediated disruption of SOCS3 in human NK cells promotes proliferation,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,Cas9,uniprot_J3F2B0,uniprot,J3F2B0,,protein,,,decreases,1,,,,,,,,PMC6861185,Cas9-mediated disruption of SOCS3 in human NK cells promotes proliferation,negative-activation
+SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,Cas9,uniprot_J3F2B0,uniprot,J3F2B0,,protein,,,decreases,1,,,,,,,,PMC6861185,Cas9-mediated disruption of SOCS3,negative-activation
+SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,CRISPR,uaz_UAZ00924,uaz,UAZ00924,,protein,,,decreases,1,,,,,,,,PMC6861185,CRISPR/Cas9-mediated disruption of SOCS3,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6861185,SOCS3 in human NK cells promotes proliferation,negative-activation
+CD56,uaz_UAZ03730,uaz,UAZ03730,,protein,,,Ruxolitinib,pubchem_25126798,pubchem,25126798,,simple-chemical,,,decreases,1,,,,,,,,PMC6861185,Ruxolitinib treatment significantly reduces disease burden in the context of CD56,negative-activation
+inflammation,go_GO:0006954,go,GO:0006954,,bioprocess,,,lab,uniprot_Q9GZY6,uniprot,Q9GZY6,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+BCATENIN,uaz_UAZ00210,uaz,UAZ00210,,protein,,,adenomatous_polyposis_coli_APC,interpro_IPR026818,interpro,IPR026818,,family,,,decreases,1,,,,,,,,PMC4597205,adenomatous polyposis coli (APC) protein is constantly expressed and activated to suppress β-catenin,negative-activation
+antigen,uaz_UA-BP-GGP-00007,uaz,UA-BP-GGP-00007,,protein,,,immunity,go_GO:0006955,go,GO:0006955,,bioprocess,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+Proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,DC,uaz_UAZ05033,uaz,UAZ05033,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+BCATENIN,uaz_UAZ07813,uaz,UAZ07813,,protein,,,DC,uaz_UAZ05033,uaz,UAZ05033,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,DC,uaz_UAZ05033,uaz,UAZ05033,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+NFKB,uniprot_P19838,uniprot,P19838,,protein,,,DC,uaz_UAZ05033,uaz,UAZ05033,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+Proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,TH1,uniprot_Q8IXH7,uniprot,Q8IXH7,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+Apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,TREG,uaz_UAZ04745,uaz,UAZ04745,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+Apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,TH2,uaz_UAZ00104,uaz,UAZ00104,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+Proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,TH2,uaz_UAZ00104,uaz,UAZ00104,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+Proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,TREG,uaz_UAZ04745,uaz,UAZ04745,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+ERK,be_ERK,be,ERK,,family,,,IBD,uniprot_Q9UKU7,uniprot,Q9UKU7,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+MAPK,be_ERK,be,ERK,,family,,,IBD,uniprot_Q9UKU7,uniprot,Q9UKU7,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+extracellular_signalregulated_kinase,be_ERK,be,ERK,,family,,,IBD,uniprot_Q9UKU7,uniprot,Q9UKU7,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,ERK_MAPK,uaz_UAZ08105,uaz,UAZ08105,,family,,,decreases,1,,,,,,,,PMC4597205,ERK MAPK pathway inhibits proliferation and induce apoptosis,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,ERK_MAPK,uaz_UAZ08105,uaz,UAZ08105,,family,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+CAC,uniprot_O43772,uniprot,O43772,,protein,,,SPHK1,uniprot_Q9NYA1,uniprot,Q9NYA1,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,GSK3B,uniprot_P49841,uniprot,P49841,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,PP2A,uniprot_P67775,uniprot,P67775,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,GSK3B,uniprot_P49841,uniprot,P49841,,protein,,,decreases,1,,,,,,,,PMC4597205,"GSK3B, SMAD, ROS, PP2A, ATM, or CERAMIDE could inhibit proliferation",negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,decreases,1,,,,,,,,PMC4597205,"ATM, or CERAMIDE could inhibit proliferation",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,CERAMIDE,pubchem_5283563,pubchem,5283563,,simple-chemical,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,CERAMIDE,pubchem_5283563,pubchem,5283563,,simple-chemical,,,decreases,1,,,,,,,,PMC4597205,CERAMIDE could inhibit proliferation,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,SMAD,be_SMAD,be,SMAD,,family,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,ROS,chebi_CHEBI:26523,chebi,CHEBI:26523,,simple-chemical,,,decreases,1,,,,,,,,PMC4597205,"ROS, PP2A, ATM, or CERAMIDE could inhibit proliferation",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,ROS,chebi_CHEBI:26523,chebi,CHEBI:26523,,simple-chemical,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,SMAD,be_SMAD,be,SMAD,,family,,,decreases,1,,,,,,,,PMC4597205,"SMAD, ROS, PP2A, ATM, or CERAMIDE could inhibit proliferation",negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,PP2A,uniprot_P67775,uniprot,P67775,,protein,,,decreases,1,,,,,,,,PMC4597205,"PP2A, ATM, or CERAMIDE could inhibit proliferation",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,Ceramide,pubchem_5283563,pubchem,5283563,,simple-chemical,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+PP2A,uniprot_P67775,uniprot,P67775,,protein,,,Ceramide,pubchem_5283563,pubchem,5283563,,simple-chemical,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,AKT,be_AKT,be,AKT,,family,,,decreases,1,,,,,,,,PMC4597205,AKT node failed to activate mitochondrial apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,C2ceramide,pubchem_5497136,pubchem,5497136,,simple-chemical,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,MK2206,pubchem_24964624,pubchem,24964624,,simple-chemical,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+result,pubchem_4594,pubchem,4594,,simple-chemical,,,P53,uniprot_P04637,uniprot,P04637,,protein,,,increases,1,,,,,,,,PMC4597205,positive-activation,
+hematopoiesis,go_GO:0030097,go,GO:0030097,,bioprocess,,,STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+hematopoiesis,go_GO:0030097,go,GO:0030097,,bioprocess,,,STAT5A,uniprot_P42229,uniprot,P42229,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+GAS,uniprot_P01350,uniprot,P01350,,protein,,,interferon,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,Jak2,uniprot_O60674,uniprot,O60674,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,cS5_F,uaz_UAZ05181,uaz,UAZ05181,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,TPO,uniprot_P07202,uniprot,P07202,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+Differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,STAT5,uaz_UAZ08063,uaz,UAZ08063,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+receptor,uaz_UAZ00375,uaz,UAZ00375,,protein,,,Mcl1,uniprot_Q07820,uniprot,Q07820,,gene,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+CD8,be_CD8,be,CD8,,family,,,Stat5b,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+CD8,be_CD8,be,CD8,,family,,,cS5_F,uaz_UAZ05181,uaz,UAZ05181,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+TPO,uniprot_P07202,uniprot,P07202,,protein,,,HSC,uniprot_P19526,uniprot,P19526,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,interferon,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,IFN,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+IFN,uaz_UAZ00085,uaz,UAZ00085,,protein,,,STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,decreases,1,,,,,,,,PMC6895831,STAT5B may repress IFN-α/β and IFN-γ,negative-activation
+IFN,uaz_UAZ03979,uaz,UAZ03979,,protein,,,STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,decreases,1,,,,,,,,PMC6895831,STAT5B may repress IFN-α/β,negative-activation
+STAT5,uaz_UAZ08063,uaz,UAZ08063,,protein,,,AML,uniprot_Q6PF39,uniprot,Q6PF39,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+CD27,uniprot_P26842,uniprot,P26842,,protein,,,STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+STAT5,be_STAT5,be,STAT5,,family,,,STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,BCL2,uniprot_P10415,uniprot,P10415,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,PIM1,uniprot_P11309,uniprot,P11309,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+ABL,uniprot_P00519,uniprot,P00519,,protein,,,STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,BCR,uniprot_P11274,uniprot,P11274,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,ABL,uniprot_P00519,uniprot,P00519,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+ALCL,uaz_UAZ07141,uaz,UAZ07141,,protein,,,ALK,uniprot_Q9UM73,uniprot,Q9UM73,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,ATP,pubchem_5957,pubchem,5957,,simple-chemical,,,decreases,1,,,,,,,,PMC6895831,ATP was found to bind to and inhibit the STAT5B,negative-activation
+EZH2,uniprot_Q15910,uniprot,Q15910,,protein,,,CD8,be_CD8,be,CD8,,family,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+EZH2,uniprot_Q15910,uniprot,Q15910,,protein,,,STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,CD8,be_CD8,be,CD8,,family,,,increases,1,,,,,,,,PMC6895831,positive-activation,
+DNA_damage_response,go_GO:0000077,go,GO:0000077,,bioprocess,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+MDM4,uniprot_O15151,uniprot,O15151,,protein,,,MDM2,uniprot_Q00987,uniprot,Q00987,,gene,,,decreases,1,,,,,,,,PMC3762865,MDM4 activates MDM2,negative-activation
+MDM2,uniprot_Q00987,uniprot,Q00987,,gene,,,MDM4,uniprot_O15151,uniprot,O15151,,protein,,,decreases,1,,,,,,,,PMC3762865,MDM4 activates MDM2 and MDM4 inhibits MDM2,negative-activation
+p53,uniprot_P04637,uniprot,P04637,,protein,,,MDM2,uniprot_Q00987,uniprot,Q00987,,gene,,,decreases,1,,,,,,,,PMC3762865,MDM2 inhibits p53,negative-activation
+p53,uniprot_P04637,uniprot,P04637,,protein,,,MDM2,uniprot_Q00987,uniprot,Q00987,,gene,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+MDM2,uniprot_Q00987,uniprot,Q00987,,gene,,,MDM4,uniprot_O15151,uniprot,O15151,,protein,,,decreases,1,,,,,,,,PMC3762865,MDM4 inhibits MDM2,negative-activation
+MDM4,uniprot_O15151,uniprot,O15151,,protein,,,MDM2,uniprot_Q00987,uniprot,Q00987,,gene,,,decreases,1,,,,,,,,PMC3762865,MDM2 inhibits MDM4,negative-activation
+p53,uniprot_P04637,uniprot,P04637,,protein,,,ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+transcription_factor_1,uniprot_P20823,uniprot,P20823,,protein,,,MYC,uniprot_P01106,uniprot,P01106,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+CHEK2,uniprot_O96017,uniprot,O96017,,protein,,,E2F1,uniprot_Q01094,uniprot,Q01094,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+E2F1,uniprot_Q01094,uniprot,Q01094,,protein,,,MYC,uniprot_P01106,uniprot,P01106,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+CHEK2,uniprot_O96017,uniprot,O96017,,protein,,,ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+MYC,uniprot_P01106,uniprot,P01106,,protein,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,decreases,1,,,,,,,,PMC3762865,p53 inhibits MYC,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,LATS2,uniprot_Q9NRM7,uniprot,Q9NRM7,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+CCNB1,uniprot_P14635,uniprot,P14635,,protein,,,KLF4,uniprot_O43474,uniprot,O43474,,protein,,,decreases,1,,,,,,,,PMC3762865,KLF4 (Kruppel-like factor 4(gut)) caused more reduction of CCNB1,negative-activation
+TLR3,uniprot_O15455,uniprot,O15455,,protein,,,interferon,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+tolllike_receptor_3,uniprot_O15455,uniprot,O15455,,protein,,,IFNA1,uniprot_P01562,uniprot,P01562,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+p53,uniprot_P04637,uniprot,P04637,,protein,,,interferon,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+TLR3,uniprot_O15455,uniprot,O15455,,protein,,,IFNA1,uniprot_P01562,uniprot,P01562,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+tolllike_receptor_3,uniprot_O15455,uniprot,O15455,,protein,,,interferon,be_Interferon,be,Interferon,,family,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+p53,uniprot_P04637,uniprot,P04637,,protein,,,IFNA1,uniprot_P01562,uniprot,P01562,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,etoposide,pubchem_36462,pubchem,36462,,simple-chemical,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+p53,uniprot_P04637,uniprot,P04637,,protein,,,etoposide,pubchem_36462,pubchem,36462,,simple-chemical,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,FAS,uniprot_P25445,uniprot,P25445,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,p53AIP1,uniprot_Q9HCN2,uniprot,Q9HCN2,,protein,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,FGF2,uniprot_P09038,uniprot,P09038,,protein,,,decreases,1,,,,,,,,PMC3762865,FGF2 that can both inhibit and activate apoptosis,negative-activation
+p53,uniprot_P04637,uniprot,P04637,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+IGFR1,uniprot_P12314,uniprot,P12314,,protein,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,decreases,1,,,,,,,,PMC3762865,p53 upregulates the IGFR1,negative-activation
+p53,uniprot_P04637,uniprot,P04637,,protein,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC3762865,positive-activation,
+CDC25A,uniprot_P30304,uniprot,P30304,,protein,,,CHEK1,uniprot_O14757,uniprot,O14757,,protein,,,decreases,1,,,,,,,,PMC3762865,CHEK1 inhibits CDC25A,negative-activation
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,"huCD26mAb, inhibits human OC differentiation",negative-activation
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,IgG_1__monoclonal_antibody,uaz_UAZ08185,uaz,UAZ08185,,protein,,,decreases,1,,,,,,,,PMC6197267,"IgG 1  monoclonal antibody targeting CD26, huCD26mAb, inhibits human OC differentiation",negative-activation
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,decreases,1,,,,,,,,PMC6197267,"CD26, huCD26mAb, inhibits human OC differentiation",negative-activation
+huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,ADCC,uniprot_O34946,uniprot,O34946,,protein,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+side,pfam_PF12252,pfam,PF12252,,family,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb additionally reduced the ratio of the side,negative-activation
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,IgG_1__monoclonal_antibody,uaz_UAZ08185,uaz,UAZ08185,,protein,,,decreases,1,,,,,,,,PMC6197267,"IgG 1  monoclonal antibody that directly targets CD26, inhibits human OC differentiation",negative-activation
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,"huCD26mAb, a humanized IgG 1  monoclonal antibody that directly targets CD26, inhibits human OC differentiation",negative-activation
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb inhibits OC differentiation,negative-activation
+CD26,uniprot_P27487,uniprot,P27487,,protein,,,MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+CD26,uaz_UAZ08190,uaz,UAZ08190,,protein,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb) inhibited the survival of CD26+,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,antiCD26_monoclonal_antibody,uaz_UAZ08193,uaz,UAZ08193,,protein,,,decreases,1,,,,,,,,PMC6197267,anti-CD26 monoclonal antibody (huCD26mAb) inhibited the survival of CD26+ MM,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb) inhibited the survival of CD26+ MM,negative-activation
+CD26,uaz_UAZ08190,uaz,UAZ08190,,protein,,,antiCD26_monoclonal_antibody,uaz_UAZ08193,uaz,UAZ08193,,protein,,,decreases,1,,,,,,,,PMC6197267,anti-CD26 monoclonal antibody (huCD26mAb) inhibited the survival of CD26+,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+CD26,uaz_UAZ08190,uaz,UAZ08190,,protein,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb blocked CD26+,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb blocked CD26+ MM,negative-activation
+cell_adhesion,go_GO:0007155,go,GO:0007155,,bioprocess,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb blocked CD26+ MM cell adhesion,negative-activation
+CD26,uniprot_P27487,uniprot,P27487,,protein,,,MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+CD26,uaz_UAZ08190,uaz,UAZ08190,,protein,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb inhibits both CD26+,negative-activation
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb inhibits both CD26+ MM cell growth,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb inhibits both CD26+ MM,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb inhibits both CD26+ MM cell growth and MM,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb can suppress MM,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb suppresses tumor progression and osteolytic bone disease in the BM milieu of MM,negative-activation
+MM,pubchem_6993082,pubchem,6993082,,simple-chemical,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,"huCD26mAb, alone or in conjunction with lenalidomide, reduced the side population (SP) ratio in CD26+ MM",negative-activation
+CD26,uaz_UAZ08190,uaz,UAZ08190,,protein,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,"huCD26mAb, alone or in conjunction with lenalidomide, reduced the side population (SP) ratio in CD26+",negative-activation
+side,pfam_PF12252,pfam,PF12252,,family,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,"huCD26mAb, alone or in conjunction with lenalidomide, reduced the side",negative-activation
+differentiation,go_GO:0030154,go,GO:0030154,,bioprocess,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb inhibits human OC differentiation,negative-activation
+CD26,uaz_UAZ08190,uaz,UAZ08190,,protein,,,14D10,uaz_UAZ08203,uaz,UAZ08203,,protein,,,decreases,1,,,,,,,,PMC6197267,"14D10, inhibited tumor cell growth of CD26+",negative-activation
+CD26,uaz_UAZ08190,uaz,UAZ08190,,protein,,,IgG_1,uaz_UAZ00080,uaz,UAZ00080,,protein,,,decreases,1,,,,,,,,PMC6197267,"IgG 1 ), IF7 or 14D10, inhibited tumor cell growth of CD26+",negative-activation
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,IF7,uaz_UAZ08205,uaz,UAZ08205,,protein,,,decreases,1,,,,,,,,PMC6197267,"IF7 or 14D10, inhibited tumor cell growth",negative-activation
+RCC,pubchem_10985033,pubchem,10985033,,simple-chemical,,,14D10,uaz_UAZ08203,uaz,UAZ08203,,protein,,,decreases,1,,,,,,,,PMC6197267,"14D10, inhibited tumor cell growth of CD26+ T-cell lymphoma or RCC",negative-activation
+RCC,pubchem_10985033,pubchem,10985033,,simple-chemical,,,IgG_1,uaz_UAZ00080,uaz,UAZ00080,,protein,,,decreases,1,,,,,,,,PMC6197267,"IgG 1 ), IF7 or 14D10, inhibited tumor cell growth of CD26+ T-cell lymphoma or RCC",negative-activation
+RCC,pubchem_10985033,pubchem,10985033,,simple-chemical,,,IF7,uaz_UAZ08205,uaz,UAZ08205,,protein,,,decreases,1,,,,,,,,PMC6197267,"IF7 or 14D10, inhibited tumor cell growth of CD26+ T-cell lymphoma or RCC",negative-activation
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,14D10,uaz_UAZ08203,uaz,UAZ08203,,protein,,,decreases,1,,,,,,,,PMC6197267,"14D10, inhibited tumor cell growth",negative-activation
+CD26,uaz_UAZ08190,uaz,UAZ08190,,protein,,,IF7,uaz_UAZ08205,uaz,UAZ08205,,protein,,,decreases,1,,,,,,,,PMC6197267,"IF7 or 14D10, inhibited tumor cell growth of CD26+",negative-activation
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,IgG_1,uaz_UAZ00080,uaz,UAZ00080,,protein,,,decreases,1,,,,,,,,PMC6197267,"IgG 1 ), IF7 or 14D10, inhibited tumor cell growth",negative-activation
+cell_growth,go_GO:0016049,go,GO:0016049,,bioprocess,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,"huCD26mAb, constructed from a 14D10 coding sequence, has been shown to inhibit malignant mesothelioma cell growth",negative-activation
+metastasis,mesh_D009362,mesh,D009362,,bioprocess,,,CD26,uniprot_P27487,uniprot,P27487,,protein,,,decreases,1,,,,,,,,PMC6197267,CD26 triggers prostate cancer metastasis,negative-activation
+adhesion,go_GO:0007155,go,GO:0007155,,bioprocess,,,huCD26mAb,uaz_UAZ08179,uaz,UAZ08179,,protein,,,decreases,1,,,,,,,,PMC6197267,huCD26mAb does not reduce expression of all adhesion,negative-activation
+CD26,uaz_UAZ08182,uaz,UAZ08182,,protein,,,CRC,uniprot_Q8L925,uniprot,Q8L925,,protein,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+CRC_61,uaz_UAZ08197,uaz,UAZ08197,,protein,,,CRC,uniprot_Q8L925,uniprot,Q8L925,,protein,,,increases,1,,,,,,,,PMC6197267,positive-activation,
+ERK,be_ERK,be,ERK,,family,,,EGFR,uniprot_P00533,uniprot,P00533,,protein,,,increases,1,,,,,,,,PMC2853906,positive-activation,
+Raf,be_RAF,be,RAF,,family,,,EGFR,uniprot_P00533,uniprot,P00533,,protein,,,increases,1,,,,,,,,PMC2853906,positive-activation,
+AKT,be_AKT,be,AKT,,family,,,EGFR,uniprot_P00533,uniprot,P00533,,protein,,,increases,1,,,,,,,,PMC2853906,positive-activation,
+PI3K,be_PI3K,be,PI3K,,protein,,,EGFR,uniprot_P00533,uniprot,P00533,,protein,,,increases,1,,,,,,,,PMC2853906,positive-activation,
+ERK,be_ERK,be,ERK,,family,,,AKT,be_AKT,be,AKT,,family,,,increases,1,,,,,,,,PMC2853906,positive-activation,
+Raf,be_RAF,be,RAF,,family,,,AKT,be_AKT,be,AKT,,family,,,increases,1,,,,,,,,PMC2853906,positive-activation,
+PI3K,be_PI3K,be,PI3K,,protein,,,ERK,be_ERK,be,ERK,,family,,,decreases,1,,,,,,,,PMC2853906,ERK activity inhibits EGFR-dependent PI3K,negative-activation
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,retinoblastoma_protein,interpro_IPR028309,interpro,IPR028309,,family,,,increases,1,,,,,,,,PMC2853906,positive-activation,
+SH2,pfam_PF00017,pfam,PF00017,,family,,,STAT,uniprot_P35610,uniprot,P35610,,protein,,,increases,1,,,,,,,,PMC6895964,positive-activation,
+IL22,uniprot_Q9GZX6,uniprot,Q9GZX6,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC6895964,positive-activation,
+IL17,uniprot_Q16552,uniprot,Q16552,,protein,,,STAT3,uniprot_P40763,uniprot,P40763,,protein,,,increases,1,,,,,,,,PMC6895964,positive-activation,
+STAT3,uniprot_P40763,uniprot,P40763,,protein,,,SOCS3,uniprot_O14543,uniprot,O14543,,protein,,,decreases,1,,,,,,,,PMC6895964,SOCS3 (suppressor of cytokine signaling-3) which strongly inhibits hyperactivated STAT3,negative-activation
+STAT5B,uniprot_P51692,uniprot,P51692,,protein,,,FLT3,uniprot_P36888,uniprot,P36888,,protein,,,increases,1,,,,,,,,PMC6895964,positive-activation,
+EGFR,uniprot_P00533,uniprot,P00533,,protein,,,cetuximab,uaz_UAZ00056,uaz,UAZ00056,,protein,,,decreases,1,,,,,,,,PMC3937194,cetuximab not only inhibits EGFR,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,DDR,pfam_PF08841,pfam,PF08841,,family,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+p53,uniprot_P04637,uniprot,P04637,,protein,,,phosphatase,pfam_PF15698,pfam,PF15698,,family,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,transcription,go_GO:0006351,go,GO:0006351,,bioprocess,,,decreases,1,,,,,,,,PMC3473366,transcription factor NF-κB promotes apoptosis,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,decreases,1,,,,,,,,PMC3473366,"cell cycle arrest can cause mitotic catastrophy, a form of cell death [ XREF_BIBR ], whereas blocking of the anti-apoptotic transcription factor NF-κB promotes apoptosis",negative-activation
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,decreases,1,,,,,,,,PMC3473366,ATM blocked all pro-survival pathways (cell cycle,negative-activation
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,Chk1,uniprot_O14757,uniprot,O14757,,protein,,,decreases,1,,,,,,,,PMC3473366,Chk1 inhibition was demonstrated to increase the cytotoxicity to topoisomerase I (TOPI) inhibitors by diminishing cell cycle,negative-activation
+TOPI,uniprot_P39814,uniprot,P39814,,protein,,,Chk1,uniprot_O14757,uniprot,O14757,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,Chk2,uniprot_O96017,uniprot,O96017,,protein,,,decreases,1,,,,,,,,PMC3473366,Chk2 in our model blocked cell cycle,negative-activation
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,Chk2,uniprot_O96017,uniprot,O96017,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+p21,uniprot_P38936,uniprot,P38936,,protein,,,cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,Cdc25C,uniprot_P30307,uniprot,P30307,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_survival,mesh_D002470,mesh,D002470,,bioprocess,,,doxorubicin,pubchem_40469134,pubchem,40469134,,simple-chemical,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,TOPI_inhibitors,uaz_UAZ09615,uaz,UAZ09615,,simple-chemical,,,decreases,1,,,,,,,,PMC3473366,TOPI inhibitors still induced cell cycle,negative-activation
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,Chk2,uniprot_O96017,uniprot,O96017,,protein,,,decreases,1,,,,,,,,PMC3473366,Chk2 inhibition potentiates cell death,negative-activation
+Chk2,uniprot_O96017,uniprot,O96017,,protein,,,Wip1,uniprot_O15297,uniprot,O15297,,protein,,,decreases,1,,,,,,,,PMC3473366,Wip1 in turn deactivates Chk2,negative-activation
+Chk2,uniprot_O96017,uniprot,O96017,,protein,,,Wip1,uniprot_O15297,uniprot,O15297,,protein,,,decreases,1,,,,,,,,PMC3473366,deactivation of Chk2 by Wip1,negative-activation
+Chk2,uniprot_O96017,uniprot,O96017,,protein,,,ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,decreases,1,,,,,,,,PMC3473366,ATM-dependent deactivation of Chk2,negative-activation
+Chk2,uniprot_O96017,uniprot,O96017,,protein,,,ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+NFKB,uaz_UAZ02852,uaz,UAZ02852,,protein,,,IKK,be_IKK_family,be,IKK_family,,family,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+NFKB,uaz_UAZ02852,uaz,UAZ02852,,protein,,,IKK_complex,be_IKK_complex,be,IKK_complex,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,ATR,uniprot_P20848,uniprot,P20848,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,ATR,uniprot_P20848,uniprot,P20848,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,Chk1,uniprot_O14757,uniprot,O14757,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,Chk1,uniprot_O14757,uniprot,O14757,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_death,go_GO:0008219,go,GO:0008219,,bioprocess,,,genomic_instability,mesh_D042822,mesh,D042822,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,MRN,uniprot_O60934,uniprot,O60934,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+DNA_repair,go_GO:0006281,go,GO:0006281,,bioprocess,,,cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,p21,uniprot_P38936,uniprot,P38936,,protein,,,decreases,1,,,,,,,,PMC3473366,"cell cycle arrest by p53 phosphorylation, p21",negative-activation
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,p53,uniprot_P04637,uniprot,P04637,,protein,,,decreases,1,,,,,,,,PMC3473366,cell cycle arrest by p53,negative-activation
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,cMyc,uniprot_Q17103,uniprot,Q17103,,protein,,,decreases,1,,,,,,,,PMC3473366,"cell cycle arrest by p53 phosphorylation, p21 expression, and c-Myc",negative-activation
+ATM,uniprot_Q13315,uniprot,Q13315,,protein,,,MRN,uniprot_O60934,uniprot,O60934,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,p21,uniprot_P38936,uniprot,P38936,,protein,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,DDR,pfam_PF08841,pfam,PF08841,,family,,,decreases,1,,,,,,,,PMC3473366,DDR defects that diminish apoptosis and cell cycle,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,DDR,pfam_PF08841,pfam,PF08841,,family,,,decreases,1,,,,,,,,PMC3473366,DDR defects that diminish apoptosis,negative-activation
+proliferation,go_GO:0008283,go,GO:0008283,,bioprocess,,,DDR,pfam_PF08841,pfam,PF08841,,family,,,increases,1,,,,,,,,PMC3473366,positive-activation,
+DNA_repair,go_GO:0006281,go,GO:0006281,,bioprocess,,,DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,decreases,1,,,,,,,,PMC3473366,DNA damage predominantly induce temporary cell cycle arrest and DNA repair,negative-activation
+cell_cycle,go_GO:0007049,go,GO:0007049,,bioprocess,,,DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,decreases,1,,,,,,,,PMC3473366,DNA damage predominantly induce temporary cell cycle,negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,decreases,1,,,,,,,,PMC3473366,"DNA damage predominantly induce temporary cell cycle arrest and DNA repair, whereas higher levels of DNA damage mainly cause apoptosis",negative-activation
+apoptosis,go_GO:0006915,go,GO:0006915,,bioprocess,,,DNA_damage,mesh_D004249,mesh,D004249,,bioprocess,,,increases,1,,,,,,,,PMC3473366,positive-activation,

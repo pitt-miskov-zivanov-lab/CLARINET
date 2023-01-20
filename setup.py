@@ -1,21 +1,21 @@
 from setuptools import setup
 
 def readme():
-    with open('README_clarinet') as f:
+    with open('README.md') as f:
         return f.read()
 
 setup(
     name='CLARINET',
-    version='1.0',
-    
+    version='Latest',
+
     author='Yasmine Ahmed',
     #author_email='',
-    description='CLARINET',
-    long_description='Verifying Interactions Of Likely Importance to the Network, built by the Mechanisms and Logic of Dynamics Lab at the University of Pittsburgh',
+    description='CLARIfying NETworks',
+    long_description='A tool that equips modelers with a fast and reliable assistant to select the most relevant knowledge about the systems being modeled using graph-based approaches and literature occurrence metadata, built by the Mechanisms and Logic of Dynamics Lab at the University of Pittsburgh',
     #license='',
-    keywords='dynamic system boolean logical qualitative modeling simulation',
+    keywords='extension modeling knowledge-graph interaction',
 
-    packages=['CLARINET'],
+    packages=['src'],
     include_package_data=True,
 
     install_requires=[
@@ -23,9 +23,10 @@ setup(
         'numpy',
         'pandas',
         'community',
+        'python-louvain',
         'seaborn',
         'rst2pdf',
-        'tornado==4.5.3' # to not interfere with jupyter
+        'tornado'
     ],
     zip_safe=False # install as directory
     )

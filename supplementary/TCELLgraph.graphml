@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="weight" attr.type="long" for="edge" id="d0"/>
+<graph edgedefault="directed"><node id="AKT"/>
+<node id="AKT_OFF"/>
+<node id="MTORC2"/>
+<node id="PDK1"/>
+<node id="AP1"/>
+<node id="FOS_DD"/>
+<node id="JUN"/>
+<node id="CA"/>
+<node id="TCR"/>
+<node id="CD25"/>
+<node id="FOXP3"/>
+<node id="NFAT"/>
+<node id="NFKAPPAB"/>
+<node id="STAT5"/>
+<node id="ERK"/>
+<node id="MEK2"/>
+<node id="FOS"/>
+<node id="FOS_D"/>
+<node id="MTOR_DD"/>
+<node id="SMAD3"/>
+<node id="IL2"/>
+<node id="IL2R"/>
+<node id="CD122"/>
+<node id="CD132"/>
+<node id="IL2_EX"/>
+<node id="JAK3"/>
+<node id="JNK"/>
+<node id="MKK7"/>
+<node id="RAF"/>
+<node id="TAK1"/>
+<node id="MTOR"/>
+<node id="MTORC1_D"/>
+<node id="MTORC2_D"/>
+<node id="MTORC1"/>
+<node id="MTORC1_OFF"/>
+<node id="RHEB"/>
+<node id="PI3K_HIGH"/>
+<node id="PI3K_LOW"/>
+<node id="S6K1"/>
+<node id="MTOR_D"/>
+<node id="NFAT_OFF"/>
+<node id="PKCTHETA"/>
+<node id="PIP3"/>
+<node id="PI3K"/>
+<node id="CD28"/>
+<node id="TCR_HIGH"/>
+<node id="TCR_LOW"/>
+<node id="PIP3_HIGH"/>
+<node id="PIP3_LOW"/>
+<node id="PTEN"/>
+<node id="PS6"/>
+<node id="RAS"/>
+<node id="TSC"/>
+<node id="TGFBETA"/>
+<node id="STAT5_D"/>
+<edge source="AKT" target="AKT_OFF">
+  <data key="d0">1</data>
+</edge>
+<edge source="AKT" target="MTORC2">
+  <data key="d0">1</data>
+</edge>
+<edge source="AKT" target="PDK1">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTORC2" target="PI3K_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTORC2" target="PI3K_LOW">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTORC2" target="S6K1">
+  <data key="d0">1</data>
+</edge>
+<edge source="PDK1" target="PIP3">
+  <data key="d0">1</data>
+</edge>
+<edge source="AP1" target="FOS_DD">
+  <data key="d0">1</data>
+</edge>
+<edge source="AP1" target="JUN">
+  <data key="d0">1</data>
+</edge>
+<edge source="FOS_DD" target="FOS_D">
+  <data key="d0">1</data>
+</edge>
+<edge source="JUN" target="JNK">
+  <data key="d0">1</data>
+</edge>
+<edge source="CA" target="TCR">
+  <data key="d0">1</data>
+</edge>
+<edge source="TCR" target="TCR_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="TCR" target="TCR_LOW">
+  <data key="d0">1</data>
+</edge>
+<edge source="CD25" target="AP1">
+  <data key="d0">1</data>
+</edge>
+<edge source="CD25" target="FOXP3">
+  <data key="d0">1</data>
+</edge>
+<edge source="CD25" target="NFAT">
+  <data key="d0">1</data>
+</edge>
+<edge source="CD25" target="NFKAPPAB">
+  <data key="d0">1</data>
+</edge>
+<edge source="CD25" target="STAT5">
+  <data key="d0">1</data>
+</edge>
+<edge source="FOXP3" target="MTOR_DD">
+  <data key="d0">1</data>
+</edge>
+<edge source="FOXP3" target="NFAT">
+  <data key="d0">1</data>
+</edge>
+<edge source="FOXP3" target="SMAD3">
+  <data key="d0">1</data>
+</edge>
+<edge source="FOXP3" target="STAT5">
+  <data key="d0">1</data>
+</edge>
+<edge source="NFAT" target="CA">
+  <data key="d0">1</data>
+</edge>
+<edge source="NFAT" target="NFAT_OFF">
+  <data key="d0">1</data>
+</edge>
+<edge source="NFKAPPAB" target="AKT">
+  <data key="d0">1</data>
+</edge>
+<edge source="NFKAPPAB" target="PKCTHETA">
+  <data key="d0">1</data>
+</edge>
+<edge source="STAT5" target="JAK3">
+  <data key="d0">1</data>
+</edge>
+<edge source="ERK" target="MEK2">
+  <data key="d0">1</data>
+</edge>
+<edge source="MEK2" target="RAF">
+  <data key="d0">1</data>
+</edge>
+<edge source="FOS" target="ERK">
+  <data key="d0">1</data>
+</edge>
+<edge source="FOS_D" target="FOS">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTOR_DD" target="MTOR_D">
+  <data key="d0">1</data>
+</edge>
+<edge source="SMAD3" target="TGFBETA">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2" target="AP1">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2" target="FOXP3">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2" target="IL2">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2" target="NFAT">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2" target="NFKAPPAB">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2R" target="CD122">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2R" target="CD132">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2R" target="CD25">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2_EX" target="IL2">
+  <data key="d0">1</data>
+</edge>
+<edge source="IL2_EX" target="IL2_EX">
+  <data key="d0">1</data>
+</edge>
+<edge source="JAK3" target="IL2R">
+  <data key="d0">1</data>
+</edge>
+<edge source="JAK3" target="IL2_EX">
+  <data key="d0">1</data>
+</edge>
+<edge source="JNK" target="MKK7">
+  <data key="d0">1</data>
+</edge>
+<edge source="MKK7" target="TAK1">
+  <data key="d0">1</data>
+</edge>
+<edge source="RAF" target="RAS">
+  <data key="d0">1</data>
+</edge>
+<edge source="TAK1" target="PKCTHETA">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTOR" target="MTORC1_D">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTOR" target="MTORC2_D">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTORC1_D" target="MTORC1">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTORC2_D" target="MTORC2">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTORC1" target="MTORC1_OFF">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTORC1" target="RHEB">
+  <data key="d0">1</data>
+</edge>
+<edge source="RHEB" target="TSC">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_HIGH" target="CD28">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_HIGH" target="IL2R">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_HIGH" target="IL2_EX">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_HIGH" target="PI3K_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_HIGH" target="TCR_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_LOW" target="CD28">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_LOW" target="IL2R">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_LOW" target="IL2_EX">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_LOW" target="PI3K_LOW">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K_LOW" target="TCR_LOW">
+  <data key="d0">1</data>
+</edge>
+<edge source="S6K1" target="MTORC1">
+  <data key="d0">1</data>
+</edge>
+<edge source="MTOR_D" target="MTOR">
+  <data key="d0">1</data>
+</edge>
+<edge source="PKCTHETA" target="CD28">
+  <data key="d0">1</data>
+</edge>
+<edge source="PKCTHETA" target="MTORC2">
+  <data key="d0">1</data>
+</edge>
+<edge source="PKCTHETA" target="TCR_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="PKCTHETA" target="TCR_LOW">
+  <data key="d0">1</data>
+</edge>
+<edge source="PIP3" target="PIP3_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="PIP3" target="PIP3_LOW">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K" target="PI3K_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="PI3K" target="PI3K_LOW">
+  <data key="d0">1</data>
+</edge>
+<edge source="PIP3_HIGH" target="PI3K_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="PIP3_HIGH" target="PTEN">
+  <data key="d0">1</data>
+</edge>
+<edge source="PIP3_LOW" target="PI3K_LOW">
+  <data key="d0">1</data>
+</edge>
+<edge source="PIP3_LOW" target="PTEN">
+  <data key="d0">1</data>
+</edge>
+<edge source="PTEN" target="FOXP3">
+  <data key="d0">1</data>
+</edge>
+<edge source="PTEN" target="PTEN">
+  <data key="d0">1</data>
+</edge>
+<edge source="PTEN" target="TCR_HIGH">
+  <data key="d0">1</data>
+</edge>
+<edge source="PS6" target="S6K1">
+  <data key="d0">1</data>
+</edge>
+<edge source="RAS" target="CD28">
+  <data key="d0">1</data>
+</edge>
+<edge source="RAS" target="IL2R">
+  <data key="d0">1</data>
+</edge>
+<edge source="RAS" target="IL2_EX">
+  <data key="d0">1</data>
+</edge>
+<edge source="RAS" target="RAS">
+  <data key="d0">1</data>
+</edge>
+<edge source="RAS" target="TCR">
+  <data key="d0">1</data>
+</edge>
+<edge source="TSC" target="AKT">
+  <data key="d0">1</data>
+</edge>
+<edge source="STAT5_D" target="STAT5">
+  <data key="d0">1</data>
+</edge>
+</graph></graphml>
