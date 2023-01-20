@@ -10,3 +10,4 @@ dependencies:
     - rst2pdf
     - community
     - python-louvain
+    - seaborn

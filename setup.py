@@ -26,6 +26,7 @@ setup(
         'python-louvain',
         'seaborn',
         'rst2pdf',
+        'seaborn',
         'tornado'
     ],
     zip_safe=False # install as directory
