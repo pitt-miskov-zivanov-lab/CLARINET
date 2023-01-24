@@ -10,25 +10,27 @@ import math
 import pickle
 from community import community_louvain
 import matplotlib.pyplot as plt
+from matplotlib.axes._axes import _log as matplotlib_axes_logger
+matplotlib_axes_logger.setLevel('ERROR')
 import seaborn as sns
 import argparse
 import os
 import time
 import logging
-from datetime import datetime, date
+from datetime import datetime
 
 
 def create_eclg(interaction_filename,model_dict):
     """
     This function creates the ECLG where a node is an event (e.g., biochemical interaction) and there
-    is an edge between two nodes (events) if they happen to occur in the same paper.
+    is an edge between two nodes (two events) if they happen to occur in the same paper.
 
     Parameters
     ----------
-    model_dict : dict
-               Dictionary that holds baseline model regulator and regulated elements
     interaction_filename : str
-               The path of the reading output file
+               The path of the reading output file (extracted events)
+    model_dict : dict
+               Dictionary that holds critical information of each baseline model element
 
     Returns
     -------
@@ -44,11 +46,10 @@ def create_eclg(interaction_filename,model_dict):
                 continue
             line = line.strip()
             interaction = re.split(',',line)
-            #print((interaction))
+            #FIXME: hard coded here, the 26th column of ReadingOutput file has to be 'PaperID'
             papers.append(interaction[25])
 
     for p in np.unique(papers):
-        #print(p+" "+str(papers.count(p)))
         Mean_interactions_per_paper+=papers.count(p)
 
     Paper_ID_unique=np.unique(papers)
@@ -59,6 +60,7 @@ def create_eclg(interaction_filename,model_dict):
     G = nx.Graph() #this will contain ECLG nodes and edges
     IDs = len(Paper_ID_unique)
     curr_map=dict()
+    #FIXME: hard coded here, the 9th, 17th columns of ReadingOutput file have to be 'regulated_name' and 'interaction'
     regulated_col = 8
     interaction_col = 16
 
@@ -87,7 +89,6 @@ def create_eclg(interaction_filename,model_dict):
             for nn in range(n+1, len(my_list)):
                 if G.has_edge(my_list[n], my_list[nn]) or G.has_edge(my_list[nn], my_list[n]):
                     G[my_list[n]][my_list[nn]]['weight'] += 1
-                    #print('repeated')
                     if my_list[n] == my_list[nn]:
                         G.remove_edge(my_list[n],my_list[nn])
                 else:
@@ -102,33 +103,30 @@ def create_eclg_el(interaction_filename,model_dict):
 
     """
     This function creates the ECLG where a node is an event (e.g., biochemical interaction) and there
-    is an edge between two nodes (events) if they happen to occur in the same paper. The reading output
+    is an edge between two nodes (two events) if they happen to occur in the same paper. The reading output
     file header must contain the following fields: Element Name, Element Type, Element Identifier,
     PosReg Name/Type/ID, NegReg Name/Type/ID and Paper ID.
 
     Parameters
     ----------
-    model_dict : dict
-         Dictionary that holds baseline model regulator and regulated elements
     interaction_filename : str
-         The path of the reading output file
+               The path of the reading output file (extracted events)
+    model_dict : dict
+               Dictionary that holds critical information of each baseline model element
 
     Returns
     -------
     G : Graph
-         Event CoLlaboration Graph
+               Event CoLlaboration Graph
     """
     df = pd.read_excel(interaction_filename)
     papers=list()
-    #print(type(df['Element Name'].iloc[7587]))
 
     #remove date entries
     date_indices = list()
     for idx,ele_name in enumerate(df['Element Name']):
-        #print(idx)
         if isinstance(ele_name, datetime) or isinstance(df['PosReg Name'].iloc[idx], datetime) or isinstance(df['NegReg Name'].iloc[idx], datetime):
             date_indices.append(int(idx))
-    #print((date_indices))
     for iii in date_indices:
         df = df.drop([iii])
 
@@ -150,31 +148,20 @@ def create_eclg_el(interaction_filename,model_dict):
     print(len(Paper_ID_unique))
     Mean_interactions_per_paper =0
     for p in np.unique(papers):
-        #papers.count(p)
-        #print(p+" "+str(papers.count(p)))
         Mean_interactions_per_paper+=papers.count(p)
-
-    print("Mean_interactions_per_paper "+str(Mean_interactions_per_paper/len(Paper_ID_unique)))
 
     G = nx.Graph()
     IDs=len(Paper_ID_unique)
 
     curr_map=dict()
-    #print(str(Paper_ID.iloc[4407]))
-    model_dict, regulators = get_model("/Users/jasmine/Desktop/PCCstudy/All/PCC_ALL.xlsx")
     for jj in range(0,IDs):
         my_list= []
         for idx,ele_name in enumerate(Element_name):
-            #print(Paper_ID_unique[jj])
-            #print(idx)
-            #print(len(IDs))
             if Paper_ID_unique[jj] in Paper_ID.iloc[idx]:
                 inter1P=''
-                #print(idx)
                 elem=getVariableName(model_dict,curr_map,[(ele_name),'','',Element_ID.iloc[idx],'',Element_type.iloc[idx],'',''])#ele_name
                 Pos=getVariableName(model_dict,curr_map,[str(PosReg_Name.iloc[idx]),'','',str(PosReg_ID.iloc[idx]),'',str(PosReg_type.iloc[idx]),'',''])#PosReg_Name[idx]
                 Neg=getVariableName(model_dict,curr_map,[str(NegReg_Name.iloc[idx]),'','',str(NegReg_ID.iloc[idx]),'',str(NegReg_type.iloc[idx]),'',''])#NegReg_Name[idx]
-                #print(Neg)
 
                 if str(Pos) != "nan_ext" and str(Pos) != "":
                     for posi in re.split(',',Pos):
@@ -194,8 +181,7 @@ def create_eclg_el(interaction_filename,model_dict):
                         inter1P=posi+'->'+elem+'->+'#+'->'+we
                         my_list.append(inter1P)
 
-                if str(Neg) != "nan_ext"and str(Neg) != "":#type(Neg) is not float:
-                    #print(("habal"))
+                if str(Neg) != "nan_ext" and str(Neg) != "":#type(Neg) is not float:
                     for nega in re.split(',',Neg):
                         if elem in model_dict and nega in model_dict:
                             if nega in model_dict[elem]['regulators']:
@@ -228,26 +214,25 @@ def create_eclg_el(interaction_filename,model_dict):
                         G.remove_edge(my_list[n],my_list[nn])
     return G
 
-
-
 # Individual assessment (IA)
 def node_weighting(G, freqTh, path):
     """
-    This function assigns weights to nodes using frequency class.
+    This function assigns weights to graph nodes using frequency class, and returns a new ECLG after removing less frequent nodes,
+    in the meantime, ECLG nodes and their freqClass level, ECLG edges before and after the removal will be saved to specified directory
 
     Parameters
     ----------
     G : undirected graph
-        ECLG
+        Event CoLlaboration Graph
     freqTh : int
-        Frequency class threshold value, events (nodes) having FC > this value will be removed
+        Frequency class threshold value, events (nodes) having FC greater than this value will be removed
     path : str
         The output directory where the genereted files will be saved
 
     Returns
     -------
     G : undirected graph
-        ECLG after the removal of the less frequent nodes
+        a new ECLG after the removal of less frequent nodes
 
     """
     # Assign weights to nodes using frequency class concept
@@ -261,14 +246,11 @@ def node_weighting(G, freqTh, path):
         nodesDegree.append(G.degree[g])
         if G.degree[g] == 0:
             continue
-        #print(G.degree[g])
 
     freqMostCommonNode = max(nodesDegree)
     #print("Frequency of most frequent node before: "+str(freqMostCommonNode))
 
-
     #Mapping node names to frequency class
-
     for g in G.nodes:
         if G.degree[g] == 0: continue
         freqCLASS = math.floor(0.5-np.log2(G.degree[g]/freqMostCommonNode))
@@ -276,13 +258,7 @@ def node_weighting(G, freqTh, path):
         mapping = {g: newName}
         G = nx.relabel_nodes(G, mapping)
 
-    #print("Total number of nodes before removing less frequent nodes:")
-    #print(len(G.nodes()))
-    #print("Total number of edges before removing less frequent nodes:")
-    #print(len(G.edges()))
     nx.write_edgelist(G, path+"ECLGbefore.txt") #ECLG nodes and edges before the removal of less frequent nodes
-    #print("hist before removing less frequent nodes")
-    #print(nx.degree_histogram(G))
 
     for g in G.nodes:
         if G.degree[g] == 0:
@@ -295,28 +271,23 @@ def node_weighting(G, freqTh, path):
     G.remove_nodes_from(ebunch)
 
     nx.write_edgelist(G, path+"ECLGafter.txt") #ECLG nodes and edges after the removal of less frequent nodes
-    #print("node length after removing less frequent nodes")
-    #print(len(G.nodes()))
-    #print("edge length after removing less frequent nodes")
-    #print(len(G.edges()))
-    #print("Frequency of most frequent node after: "+str(freqMostCommonNode))
-    #print("hist after removing less frequent nodes")
-    #print(nx.degree_histogram(G))
+
     return G
 
 # Pair assessment (IA)
 def edge_weighting(G, path, weightMethod):
     """
-    This function assigns weights to edges using frequency class (FC) or inverse frequency formula (IF).
+    This function assigns weights to graph edges using frequency class (FC) or inverse frequency formula (IF), and returns a weighted ECLG
+    in the meantime, ECLG edges and their weights will be saved to specified directory
 
     Parameters
     ----------
     G : undirected graph
-        ECLG
+        Event CoLlaboration Graph
     path : str
         The output directory where the genereted files will be saved
     weightMethod : str
-        FC or IF
+        'FC' or 'IF'
 
     Returns
     -------
@@ -325,7 +296,7 @@ def edge_weighting(G, path, weightMethod):
     """
     # Assign weights to edges using frequency class concept (fc) or inverse frequency concept (iif)
 
-    fill = path + "LSSfc" #This file will be input to runClusterInfo.py
+    fill = path + "LSS" #This file will be input to get_cluster_info()
     output_stream = open(fill, 'w')
     N = G.number_of_nodes()
     weights = list()
@@ -337,23 +308,33 @@ def edge_weighting(G, path, weightMethod):
 
     for n1, n2, w in G.edges.data():
         w1 = G[n1][n2]['weight']
-        p1 = np.log(N/G.degree[n1])#iif
-        p2 = np.log(N/G.degree[n2])#iif
-        dd = math.floor(0.5-np.log2(w1/(maxWeight))) #fc
-        #dd=w1*(p1 + p2) #iif (uncomment if you wanna use iif to assign edge weights instead of fc)
-        #if dd < 0: dd = 0 #iif (uncomment if you wanna use iif to assign edge weights instead of fc)
-        G[n1][n2]['weight']= dd #np.log(p1_2/((p1)*(p2)))
-        output_stream.write(n1+' '+n2+' '+str(dd)+'\n')
+        if weightMethod == 'FC':
+            dd = math.floor(0.5-np.log2(w1/(maxWeight))) #fc
+            G[n1][n2]['weight']= dd
+            output_stream.write(n1+' '+n2+' '+str(dd)+'\n')
+        elif weightMethod == 'IF':
+            p1 = np.log(N/G.degree[n1])
+            p2 = np.log(N/G.degree[n2])
+            dd = w1*(p1 + p2)
+            if dd < 0:
+                dd = 0
+            G[n1][n2]['weight']= dd
+            output_stream.write(n1+' '+n2+' '+str(dd)+'\n')
     return G
 
 def clustering(G, path):
     """
-    This function clusters the ECLG using the community detection algorithm by Blondel et al..
+    This function implements three things:
+    1) clusters the ECLG using the community detection algorithm by Blondel et al., and returns a pickle file containing grouped
+    (clustered) extensions, specified as nested lists. Each group starts with an integer, followed by interactions specified as
+    [regulator element, regulated element, Interaction type: Activation (+) or Inhibition (-)];
+    2) displays the cluster result
+    3) saves each cluster in a separate file, in both uninterpreted (under GeneratedClusters/) and interpreted manners (under InterpretedClusters/)
 
     Parameters
     ----------
     G : undirected graph
-        ECLG
+        Event CoLlaboration Graph
     path : str
         The output directory where the genereted files will be saved
 
@@ -366,7 +347,7 @@ def clustering(G, path):
     G_main_com = G.copy()
     min_nb = 2
     com_edges = list()
-    group_num=1
+    group_num = 1
     for com in set(partition.values()) :
         list_nodes = [nodes for nodes in partition.keys() if partition[nodes] == com]
         if len(list_nodes) < min_nb:
@@ -390,7 +371,7 @@ def clustering(G, path):
                         temp.append(list_nodes[jj])
                         temp.append(wi)
                         NODESS.append(temp)
-            com_edges.append([group_num]+NODESS)#
+            com_edges.append([group_num]+NODESS)
             group_num=group_num+1
     pickle.dump(com_edges, open(path + "grouped_ext",'wb')) #all clusters in one pickle file
 
@@ -400,7 +381,6 @@ def clustering(G, path):
     count = 0
     pos = nx.spring_layout(G_main_com)
     colors = dict(zip(communities.keys(), sns.color_palette('hls', len(communities.keys()))))
-#    print("hihi")
     for com in communities.keys():
         count = count + 1
         list_nodes = [nodes for nodes in partition.keys() if partition[nodes] == com and nodes not in communities.values()]
@@ -411,7 +391,6 @@ def clustering(G, path):
     nx.draw_networkx_labels(G_main_com, pos, labels)
     plt.axis('off')
     plt.show()
-
 
     #Save each cluster in a separate file
 
@@ -453,18 +432,129 @@ def clustering(G, path):
                 cl.append(s1[0]+' '+s1[1]+' '+s1[2]+' '+s1[3]+'\n')
         output_stream.close()
 
+def get_cluster_info(generated_clu_path, LSS_file, output_path):
+    """
+    This function returns some basic information about each of these generated clusters as a DataFrame object, as well as saves it as .csv file
+    Information includes Cluster_index, Nodes, Edges, Density, AvgPathLength, Coeff, LSS, NodesX, EdgesX, DensityX, AvgPathLength, CoeffX, FreqClass, node_perc.
+
+    Parameters
+    ----------
+    generated_clu_path : str
+        The directory that contains the genereted clusters
+    LSS_file : str
+        The path of LSS_file, containing ECLG edges and their weights, generated in edge_weighting()
+    output_path : str
+        The output directory where ClusterInfoFile.csv will be saved
+
+    Returns
+    -------
+    cluster_df : pandas.DataFrame()
+        DataFrame that contains information for each generated cluster
+    """
+
+    entries = os.listdir(generated_clu_path) #directory of generated clusters
+    NewFile = output_path + "ClusterInfoFile.csv" #output file that contains clusters'info
+    output_stream = open(NewFile, "w")
+    output_stream.write("Cluster_index, Nodes, Edges, Density, AvgPathLength, Coeff, LSS, NodesX, EdgesX, DensityX, AvgPathLength, CoeffX, FreqClass, node_perc"+'\n')
+    cluster_df = pd.DataFrame(columns=['Cluster_index', 'Nodes', 'Edges', 'Density', 'AvgPathLength', 'Coeff', 'LSS', 'NodesX', 'EdgesX', 'DensityX', 'AvgPathLength', 'CoeffX', 'FreqClass', 'node_perc'])
+    frequencyCLasses = dict()
+
+    with open(LSS_file) as f: #This file that has been generated from runClarinet, it contains weighted edges of the ECLG, its name is LSSfc
+        content = f.readlines()
+        for c in content:
+            x = c.strip()
+            xx = x.split(" ")
+            theKey = xx[0]+" "+xx[1]
+            frequencyCLasses[theKey]=xx[2] #edge weights either FC or IF
+
+    for entry in entries:
+        Cl = ''
+
+        for e in entry:
+            if e.isdigit(): Cl += str(e)
+        if not entry.startswith("GeneratedCluster"): continue
+
+        G = nx.Graph() #generated cluster
+        G1 = nx.Graph() #interpreted cluster
+
+        weights = []
+
+        with open(os.path.join(generated_clu_path, entry)) as f:
+            content = f.readlines()
+            freqCount = 0
+
+            for c in content:
+                x = c.strip()
+                xx = x.split(" ")
+                G.add_edge(xx[0],xx[1])
+                G[xx[0]][xx[1]]['weight']=xx[2]
+                weights.append(float(xx[2]))
+                Int1 = xx[0].split('->')
+                Int2 = xx[1].split('->')
+                G1.add_edge(Int1[0],Int1[1])
+                G1.add_edge(Int2[0],Int2[1])
+                G1[Int1[0]][Int1[1]]['weight']=Int1[3] #Int1[2] will be +/- based on type of interaction
+                G1[Int2[0]][Int2[1]]['weight']=Int2[3]
+
+            num_of_nodes = G1.number_of_nodes()
+            nod = 0 # increment this variable whenever you find an elemnt that is in the baseline model
+
+            for no in G1.nodes():
+                nn1 = no.split('_')
+                if len(nn1)>=2:
+                    if nn1[-1]!="ext":
+                        nod += 1
+                elif len(nn1)==1:
+                    nod += 1
+
+            # compute % node overlap
+            node_perc = 100*(nod/num_of_nodes)
+            for n in G.nodes():
+                xX = n.split("->")
+                if str(xX[3]) == '0':
+                    freqCount += 1
+
+            weightsss=list()
+
+            for n1, n2, w in G.edges.data():
+                for key in frequencyCLasses:
+                    Inter = n1+" "+n2
+                    if Inter ==key:
+                        weightsss.append(float(frequencyCLasses[key]))
+
+                pathlengths = []
+                pathlengths1 = []
+
+                for n in G.nodes():
+                    spl = dict(nx.single_source_shortest_path_length(G, n))
+                    for p in spl:
+                        pathlengths.append(spl[p])
+                Paths = sum(pathlengths) / len(pathlengths)
+
+                for n in G1.nodes():
+                    spl = dict(nx.single_source_shortest_path_length(G1, n))
+                    for p in spl:
+                        pathlengths1.append(spl[p])
+                Paths1 = sum(pathlengths1) / len(pathlengths1)
+
+            cluster_df.loc[int(Cl)]= [int(Cl), G.number_of_nodes(), G.number_of_edges(), nx.density(G), Paths, nx.average_clustering(G), sum(weights)/len(weights), G1.number_of_nodes(), G1.number_of_edges(), nx.density(G1), Paths1, nx.average_clustering(G1), freqCount, node_perc]
+            output_stream.write(', '.join(str(x) for x in cluster_df.loc[int(Cl)]) + '\n')
+    output_stream.close()
+    return cluster_df
 
 def merge_clusters(regulators, path, ReturnTh):
     """
-    This function prints indices of clusters  to be merged based on the existence of one or more return paths.
+    This function records indices of clusters to be merged based on the existence of return paths.
     It generates the grouped_ext_Merged pickle file that contains the merged clusters.
 
     Parameters
     ----------
     regulators : dict
-        contains baseline model elements and corresponding regulator elements
+		Contains baseline model elements and corresponding regulator elements
     path : str
-        The path of the directory that contains the grouped_ext file
+		The path of the directory that contains the grouped_ext file
+    ReturnTh : int
+		A user-defined integer threshold for the number of return paths, beyond which clusters will be merged
     """
     # Merge clusters if there is one or more return paths
 
@@ -511,8 +601,7 @@ def merge_clusters(regulators, path, ReturnTh):
                                     count = count+1
 
             if count > int(ReturnTh): #set threshold for the number of return paths
-                logging.info('Merge community {} and {}'.format(ii,jj))
-                #print(count)
+                logging.info('Merge clusters NO.{} and NO.{}'.format(str(ii+1),str(jj+1)))
                 Gall = nx.compose(G1,G2)
                 NODESS = list()
                 for (node1,node2,data) in Gall.edges(data=True):
@@ -535,7 +624,20 @@ def merge_clusters(regulators, path, ReturnTh):
 # define regex for valid characters in variable names
 _VALID_CHARS = r'a-zA-Z0-9\@\_\/'
 def get_model(model_file: str):
-	""" Return a dictionary of the model regulators, ids, etc.
+	"""
+	This function reads the baseline model of BioRECIPES format and returns two useful dictionaries
+
+	Parameters
+	----------
+	model_file : str
+		The path of the baseline model file
+
+	Returns
+	-------
+	model_dict : dict
+		Dictionary that holds critical information of each baseline model element
+	regulators : dict
+		 Contains baseline model elements and corresponding regulator elements
 	"""
 
 	global _VALID_CHARS
@@ -591,7 +693,22 @@ def get_model(model_file: str):
 	return model_dict, regulators
 
 def getVariableName(model_dict, curr_map, ext_element_info):
-	""" Match the element name from the extension to an element in the model
+	"""
+	A utility function for create_eclg() and create_eclg_el(), which matches the element name from the extracted event to an element in the baseline model
+
+	Parameters
+	----------
+	model_dict : dict
+		Dictionary that holds critical information of each baseline model element
+	curr_map: dict
+		Temporary dictionary that contains already matched pairs
+	ext_element_info: list
+		List of information for certain element in the extracted event, starting with element name
+
+	Returns
+	-------
+	match : str
+		The most likely matched element name in model_dict, to the element represented by ext_element_info; Otherwise, return the extended element name suffix by "_ext"
 	"""
 
 	global _VALID_CHARS
@@ -599,7 +716,6 @@ def getVariableName(model_dict, curr_map, ext_element_info):
 	ext_element_name = ext_element_info[0]
 	#print(ext_element_name)
 	#print(ext_element_info)
-
 
 	# Check for valid element name
 	if ext_element_name=='':
@@ -624,7 +740,6 @@ def getVariableName(model_dict, curr_map, ext_element_info):
 	for key,value in model_dict.items():
 		#print(ext_element_id)
 
-
 		curr_conf = 0.0
 		if str(ext_element_id).upper() in value['ids']:
 			curr_conf = 1
@@ -647,18 +762,17 @@ def getVariableName(model_dict, curr_map, ext_element_info):
 def make_diGraph(mdldict):
 
     """
-    This function creates a directed graph for a model in the BioRECIPES format.
+    A utility function for merge_clusters(), this function converts the baseline model into a directed graph.
 
     Parameters
     ----------
-    mdldict : dict
-        contains baseline model elements and corresponding regulator elements
+    regulators : dict
+		Contains baseline model elements and corresponding regulator elements
 
     Returns
     -------
-    G : DiGraph
-         contains the baseline model in the form of directed graph where nodes
-         are model elements and edges are interaction between model elements.
+    G : DiGraph()
+        Directed graph of the baseline model
     """
 
     G = nx.DiGraph()
@@ -669,7 +783,6 @@ def make_diGraph(mdldict):
             G.add_edge(value, key)
 
     return G
-
 
 def get_args():
 
@@ -699,6 +812,8 @@ def main():
     G = node_weighting(G, args.FCTh, args.out)
     G = edge_weighting(G, args.out, weightMethod)
     clustering(G, args.out)
+    # Get cluster information
+    get_cluster_info(args.out+"GeneratedClusters/", args.out+"LSS", args.out)
     merge_clusters(regulators, args.out, args.ReturnTh)
 
     t1 = time.time()
