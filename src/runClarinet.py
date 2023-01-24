@@ -23,7 +23,8 @@ from datetime import datetime
 def create_eclg(interaction_filename,model_dict):
     """
     This function creates the ECLG where a node is an event (e.g., biochemical interaction) and there
-    is an edge between two nodes (two events) if they happen to occur in the same paper.
+    is an edge between two nodes (two events) if they happen to occur in the same paper. The reading output
+    file is in INDRA format.
 
     Parameters
     ----------
@@ -217,8 +218,8 @@ def create_eclg_el(interaction_filename,model_dict):
 # Individual assessment (IA)
 def node_weighting(G, freqTh, path):
     """
-    This function assigns weights to graph nodes using frequency class, and returns a new ECLG after removing less frequent nodes,
-    in the meantime, ECLG nodes and their freqClass level, ECLG edges before and after the removal will be saved to specified directory
+    This function assigns weights to graph nodes using frequency class, and returns a new ECLG after removing less frequent nodes.
+    In the meantime, ECLG nodes and their freqClass level, ECLG edges before and after the removal will be saved to specified directory.
 
     Parameters
     ----------
@@ -277,8 +278,8 @@ def node_weighting(G, freqTh, path):
 # Pair assessment (IA)
 def edge_weighting(G, path, weightMethod):
     """
-    This function assigns weights to graph edges using frequency class (FC) or inverse frequency formula (IF), and returns a weighted ECLG
-    in the meantime, ECLG edges and their weights will be saved to specified directory
+    This function assigns weights to graph edges using frequency class (FC) or inverse frequency formula (IF), and returns a weighted ECLG.
+    In the meantime, ECLG edges and their weights will be saved to specified directory.
 
     Parameters
     ----------
@@ -325,11 +326,11 @@ def edge_weighting(G, path, weightMethod):
 def clustering(G, path):
     """
     This function implements three things:
-    1) clusters the ECLG using the community detection algorithm by Blondel et al., and returns a pickle file containing grouped
+    |  1) clusters the ECLG using the community detection algorithm by Blondel et al., and returns a pickle file containing grouped
     (clustered) extensions, specified as nested lists. Each group starts with an integer, followed by interactions specified as
     [regulator element, regulated element, Interaction type: Activation (+) or Inhibition (-)];
-    2) displays the cluster result
-    3) saves each cluster in a separate file, in both uninterpreted (under GeneratedClusters/) and interpreted manners (under InterpretedClusters/)
+    |  2) displays the cluster result
+    |  3) saves each cluster in a separate file, in both uninterpreted (under GeneratedClusters/) and interpreted manners (under InterpretedClusters/)
 
     Parameters
     ----------
