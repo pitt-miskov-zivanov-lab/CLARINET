@@ -326,11 +326,11 @@ def edge_weighting(G, path, weightMethod):
 def clustering(G, path):
     """
     This function implements three things:
-    |  1) clusters the ECLG using the community detection algorithm by Blondel et al., and returns a pickle file containing grouped
+    (1) clusters the ECLG using the community detection algorithm by Blondel et al., and returns a pickle file containing grouped
     (clustered) extensions, specified as nested lists. Each group starts with an integer, followed by interactions specified as
     [regulator element, regulated element, Interaction type: Activation (+) or Inhibition (-)];
-    |  2) displays the cluster result
-    |  3) saves each cluster in a separate file, in both uninterpreted (under GeneratedClusters/) and interpreted manners (under InterpretedClusters/)
+    (2) displays the cluster result;
+    (3) saves each cluster in a separate file, in both uninterpreted (under GeneratedClusters/) and interpreted manners (under InterpretedClusters/).
 
     Parameters
     ----------

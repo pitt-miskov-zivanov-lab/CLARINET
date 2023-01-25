@@ -5,7 +5,13 @@
 
 Welcome to CLARINET's documentation!
 ====================================
-CLARINET (CLARIfying NETworks) ia a novel tool for rapid model assembly by automatically extending dynamic network models with the information published in literature. This facilitates information reuse and data reproducibility and replaces hundreds or thousands of manual experiments, thereby reducing the time needed for the advancement of knowledge.  
+.. image:: https://readthedocs.org/projects/theclarinet/badge/?version=latest
+    :target: https://theclarinet.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+.. image:: https://mybinder.org/badge_logo.svg
+    :target: https://mybinder.org/v2/gh/pitt-miskov-zivanov-lab/CLARINET/HEAD?labpath=%2Fexamples%2Fuse_CLARINET.ipynb
+
+CLARINET (CLARIfying NETworks) ia a novel tool for rapid model assembly by automatically extending dynamic network models with the information published in literature. This facilitates information reuse and data reproducibility and replaces hundreds or thousands of manual experiments, thereby reducing the time needed for the advancement of knowledge.
 
 CLARINET objectives
 -------------------
@@ -15,31 +21,24 @@ CLARINET objectives
 
 CLARINET architecture
 ---------------------
-(Left) CLARINET inputs: Extracted Event Set (EES) and Baseline model. (Right) Flow diagram of the CLARINET processing steps and outputs.
+(Left) CLARINET inputs: Extracted Event Set (EES) and Baseline model. |br|
+(Right) Flow diagram of the CLARINET processing steps and outputs.
 
 .. image:: CLARINET1.png
-
-
-
-Dependencies
-------------
-Python libraries: pandas, numpy, network, math, pickle, community, matplotlib.pyplot. 
 
 Applications
 ------------
 The primary application area of CLARINET is dynamic and causal network models.
 
-Funding
--------
-CLARINET was partially supported by the AIMCancer DARPA award (W911NF-17-1-0135).
-
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
    CLARINET
+   TutorialandInstallation
    Legal
- 
 
+.. # define a hard line break for HTML
+.. |br| raw:: html
 
-
+   <br />

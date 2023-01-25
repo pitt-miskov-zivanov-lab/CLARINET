@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-CLARINET functions (:py:mod:`runClarinet`)
+Functions
 ===================================================
-This page provides a detailed documentation of the CLARINET functions.
+This page provides a detailed documentation of the CLARINET functions, defined under (:py:mod:`runClarinet`).
 
 creating ECLG from INDRA
 -----------------------------
