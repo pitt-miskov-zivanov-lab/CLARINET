@@ -240,7 +240,7 @@ def node_weighting(G, freqTh, path):
 
     ebunch = list() #less frequent nodes that will be removed
     nodesDegree = list()
-    fill = path + "freqClass"
+    fill = os.path.join(path, "freqClass")
     output_stream = open(fill, 'w')
 
     for g in G.nodes:
@@ -259,7 +259,7 @@ def node_weighting(G, freqTh, path):
         mapping = {g: newName}
         G = nx.relabel_nodes(G, mapping)
 
-    nx.write_edgelist(G, path+"ECLGbefore.txt") #ECLG nodes and edges before the removal of less frequent nodes
+    nx.write_edgelist(G, os.path.join(path,"ECLGbefore.txt")) #ECLG nodes and edges before the removal of less frequent nodes
 
     for g in G.nodes:
         if G.degree[g] == 0:
@@ -271,7 +271,7 @@ def node_weighting(G, freqTh, path):
         nodesDegree.append(G.degree[g])
     G.remove_nodes_from(ebunch)
 
-    nx.write_edgelist(G, path+"ECLGafter.txt") #ECLG nodes and edges after the removal of less frequent nodes
+    nx.write_edgelist(G, os.path.join(path,"ECLGafter.txt")) #ECLG nodes and edges after the removal of less frequent nodes
 
     return G
 
@@ -297,7 +297,7 @@ def edge_weighting(G, path, weightMethod):
     """
     # Assign weights to edges using frequency class concept (fc) or inverse frequency concept (iif)
 
-    fill = path + "LSS" #This file will be input to get_cluster_info()
+    fill = os.path.join(path, "LSS") #This file will be input to get_cluster_info()
     output_stream = open(fill, 'w')
     N = G.number_of_nodes()
     weights = list()
@@ -374,7 +374,7 @@ def clustering(G, path):
                         NODESS.append(temp)
             com_edges.append([group_num]+NODESS)
             group_num=group_num+1
-    pickle.dump(com_edges, open(path + "grouped_ext",'wb')) #all clusters in one pickle file
+    pickle.dump(com_edges, open(os.path.join(path, "grouped_ext"),'wb')) #all clusters in one pickle file
 
     # Display graph
     plt.figure(figsize=(13, 5))
@@ -395,10 +395,10 @@ def clustering(G, path):
 
     #Save each cluster in a separate file
 
-    thePath = os.path.join(path, "GeneratedClusters/") # Directory containing generated clusters
+    thePath = os.path.join(path, "GeneratedClusters") # Directory containing generated clusters
     if not os.path.exists(thePath):
         os.makedirs(thePath)
-    clusterFile = thePath + 'GeneratedCluster'  # generated (uninterpreted) clusters
+    clusterFile = os.path.join(thePath, 'GeneratedCluster')  # generated (uninterpreted) clusters
 
     for e in com_edges:
         cl = []
@@ -413,10 +413,10 @@ def clustering(G, path):
                 cl.append(ee[0]+' '+ee[1]+' '+str(ee[2])+'\n')
         output_stream.close()
 
-    thePath = os.path.join(path, "InterpretedClusters/")
+    thePath = os.path.join(path, "InterpretedClusters")
     if not os.path.exists(thePath):
         os.makedirs(thePath)
-    clusterFile = thePath + 'InterpretedCluster' #interpreted clusters
+    clusterFile = os.path.join(thePath, 'InterpretedCluster') #interpreted clusters
 
     for e in com_edges:
         cl = []
@@ -454,7 +454,7 @@ def get_cluster_info(generated_clu_path, LSS_file, output_path):
     """
 
     entries = os.listdir(generated_clu_path) #directory of generated clusters
-    NewFile = output_path + "ClusterInfoFile.csv" #output file that contains clusters'info
+    NewFile = os.path.join(output_path, "ClusterInfoFile.csv") #output file that contains clusters'info
     output_stream = open(NewFile, "w")
     output_stream.write("Cluster_index, Nodes, Edges, Density, AvgPathLength, Coeff, LSS, NodesX, EdgesX, DensityX, AvgPathLength, CoeffX, FreqClass, node_perc"+'\n')
     cluster_df = pd.DataFrame(columns=['Cluster_index', 'Nodes', 'Edges', 'Density', 'AvgPathLength', 'Coeff', 'LSS', 'NodesX', 'EdgesX', 'DensityX', 'AvgPathLength', 'CoeffX', 'FreqClass', 'node_perc'])
@@ -563,7 +563,7 @@ def merge_clusters(regulators, path, ReturnTh):
     G = make_diGraph(regulators)
     com_edges = list()
     group_num = 1
-    extensions = pickle.load(open(path+"grouped_ext",'rb'))
+    extensions = pickle.load(open(os.path.join(path,"grouped_ext"),'rb'))
 
     for ii in range(0,len(extensions)):
         for jj in range(ii+1,len(extensions)):
@@ -617,7 +617,7 @@ def merge_clusters(regulators, path, ReturnTh):
                 com_edges.append([group_num] + NODESS)
                 group_num = group_num+1
 
-    pickle.dump(com_edges, open(path + "grouped_ext_Merged",'wb')) #Merged clusters
+    pickle.dump(com_edges, open(os.path.join(path, "grouped_ext_Merged"),'wb')) #Merged clusters
 
     return
 
@@ -814,7 +814,7 @@ def main():
     G = edge_weighting(G, args.out, weightMethod)
     clustering(G, args.out)
     # Get cluster information
-    get_cluster_info(args.out+"GeneratedClusters/", args.out+"LSS", args.out)
+    get_cluster_info(os.path.join(args.out,"GeneratedClusters"), os.path.join(args.out,"LSS"), args.out)
     merge_clusters(regulators, args.out, args.ReturnTh)
 
     t1 = time.time()

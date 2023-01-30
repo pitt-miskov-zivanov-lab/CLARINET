@@ -9,6 +9,6 @@ matplotlib==3.3.4
 Jinja2<3.1
 rst2pdf
 pandas
-networkx
+networkx>=2.5
 seaborn
 python-louvain

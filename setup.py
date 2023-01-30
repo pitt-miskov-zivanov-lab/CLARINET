@@ -19,7 +19,7 @@ setup(
     include_package_data=True,
 
     install_requires=[
-        'networkx',
+        'networkx>=2.5',
         'numpy',
         'pandas',
         'python-louvain',

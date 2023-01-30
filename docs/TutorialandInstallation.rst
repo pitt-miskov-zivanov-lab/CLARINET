@@ -4,7 +4,7 @@ Online Tutorial
 .. image:: https://mybinder.org/badge_logo.svg
  :target: https://mybinder.org/v2/gh/pitt-miskov-zivanov-lab/CLARINET/HEAD?labpath=%2Fexamples%2Fuse_CLARINET.ipynb
 
-Click the icon above and run the demonstrated example; or alternatively upload user-customized input files to the input/ directory on File Browser Tab (upper left corner) of Binder.
+Click the icon above and run the demonstrated example; or alternatively upload user-customized input files to the ``input`` directory on :guilabel:`File Browser` tab (upper left corner) of Binder.
 
 This interactive jupyter notebook walks you though all of the code and functions to:
   * Get familiar with and parse the input files including baseline model spreadsheet and machine reading extracted events.
@@ -15,7 +15,7 @@ This interactive jupyter notebook walks you though all of the code and functions
 Offline Installation
 ########################
 
-CLARINET requires Python installed on local machine. If users want to explore the interactive notebook we provided locally, Jupyter notebook installation is also required.
+CLARINET requires Python installed on local machine (MacOS, Linux and Windows are all supported). If users want to explore the interactive notebook we provided locally, Jupyter notebook installation is also required.
 
 1. Clone the `CLARINET repository <https://github.com/pitt-miskov-zivanov-lab/CLARINET>`_, to your computer.
 

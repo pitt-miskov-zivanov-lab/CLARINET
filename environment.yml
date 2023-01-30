@@ -3,7 +3,7 @@ dependencies:
   - numpy
   - pip
   - pip:
-    - networkx
+    - networkx>=2.5
     - openpyxl
     - pandas
     - matplotlib
