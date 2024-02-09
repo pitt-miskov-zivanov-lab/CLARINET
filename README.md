@@ -1,5 +1,5 @@
 # CLARINET
-[![Documentation Status](https://readthedocs.org/projects/theclarinet/badge/?version=latest)](https://theclarinet.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/melody-clarinet/badge/?version=latest)](https://melody-clarinet.readthedocs.io/en/latest/?badge=latest)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pitt-miskov-zivanov-lab/CLARINET/HEAD?labpath=%2Fexamples%2Fuse_CLARINET.ipynb)
 
 ### (CLARIfying NETworks)
