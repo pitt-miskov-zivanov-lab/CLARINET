@@ -5,8 +5,8 @@
 
 Welcome to CLARINET's documentation!
 ====================================
-.. image:: https://readthedocs.org/projects/theclarinet/badge/?version=latest
-    :target: https://theclarinet.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/melody-clarinet/badge/?version=latest
+    :target: https://melody-clarinet.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 .. image:: https://mybinder.org/badge_logo.svg
     :target: https://mybinder.org/v2/gh/pitt-miskov-zivanov-lab/CLARINET/HEAD?labpath=%2Fexamples%2Fuse_CLARINET.ipynb
