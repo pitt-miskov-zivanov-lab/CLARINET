@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), os.pardir, 'src/'))
 # -- Project information -----------------------------------------------------
 
 project = 'CLARINET'
-copyright = '2021, Yasmine Ahmed, Miskov-Zivanov Lab (MeLoDy lab)'
+copyright = '2024, Yasmine Ahmed, Miskov-Zivanov Lab (MeLoDy lab)'
 author = 'Yasmine Ahmed'
 
 # The short X.Y version

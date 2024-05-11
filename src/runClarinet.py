@@ -24,7 +24,7 @@ def create_eclg(interaction_filename,model_dict):
     """
     This function creates the ECLG where a node is an event (e.g., biochemical interaction) and there
     is an edge between two nodes (two events) if they happen to occur in the same paper. The reading output
-    file is in INDRA format.
+    file is in BioRECIPE format.
 
     Parameters
     ----------
@@ -41,14 +41,22 @@ def create_eclg(interaction_filename,model_dict):
     papers=list() #list of Paper IDs within the RO file
     Mean_interactions_per_paper = 0
 
+    #FIXME: hard coded here, the 28th column of ReadingOutput file has to be 'Paper IDs'
+    Paper_IDs_col = 27
+    #FIXME: hard coded here, the 1st, 9th, 17th columns of ReadingOutput file
+    #have to be 'Regulator Name', 'Regulated Name' and 'Sign'
+    regulator_col = 0
+    regulated_col = 8
+    interaction_sign_col = 16
+
     with open(interaction_filename) as interaction_file:
         for line in interaction_file:
-            if 'regulator_name' in line:
+            if 'Regulator Name' in line:
                 continue
             line = line.strip()
             interaction = re.split(',',line)
-            #FIXME: hard coded here, the 26th column of ReadingOutput file has to be 'PaperID'
-            papers.append(interaction[25])
+
+            papers.append(interaction[Paper_IDs_col])
 
     for p in np.unique(papers):
         Mean_interactions_per_paper+=papers.count(p)
@@ -57,30 +65,25 @@ def create_eclg(interaction_filename,model_dict):
     logging.info('Number of unique paper IDs: {}'.format(str(len(Paper_ID_unique))))
     logging.info('Average interactions per paper: {}'.format(str(Mean_interactions_per_paper/len(Paper_ID_unique))))
 
-
     G = nx.Graph() #this will contain ECLG nodes and edges
     IDs = len(Paper_ID_unique)
     curr_map=dict()
-    #FIXME: hard coded here, the 9th, 17th columns of ReadingOutput file have to be 'regulated_name' and 'interaction'
-    regulated_col = 8
-    interaction_col = 16
 
     #Create ECLG from RO file
-
     for jj in range(0, IDs):
         my_list = []
         with open(interaction_filename) as interaction_file:
             for line in interaction_file:
-                if 'regulator_name' in line:
+                if 'Regulator Name' in line:
                     continue
                 line = line.strip()
                 interaction = re.split(',',line)
-                if Paper_ID_unique[jj] in interaction[25]:
+                if Paper_ID_unique[jj] in interaction[Paper_IDs_col]:
                     inter1P=''
-                    if (interaction[0] != '' and interaction[8] != ''):
-                        elem11 = getVariableName(model_dict,curr_map,interaction[0:regulated_col])
-                        elem22 = getVariableName(model_dict,curr_map,interaction[regulated_col:interaction_col])
-                        if interaction[16] == 'increases':
+                    if (interaction[regulator_col] != '' and interaction[regulated_col] != ''):
+                        elem11 = getVariableName(model_dict,curr_map,interaction[regulator_col:regulated_col])
+                        elem22 = getVariableName(model_dict,curr_map,interaction[regulated_col:interaction_sign_col])
+                        if interaction[interaction_sign_col] == 'positive':
                             inter1P = elem11+'->'+elem22+'->+'#+'->'+we
                         else:
                             inter1P = elem11+'->'+elem22+'->-'#+'->'+we
@@ -146,7 +149,7 @@ def create_eclg_el(interaction_filename,model_dict):
         papers.append(p)
 
     Paper_ID_unique=np.unique(papers)
-    print(len(Paper_ID_unique))
+    #print(len(Paper_ID_unique))
     Mean_interactions_per_paper =0
     for p in np.unique(papers):
         Mean_interactions_per_paper+=papers.count(p)
@@ -654,11 +657,11 @@ def get_model(model_file: str):
 		df_model = df_model.rename(columns=df_model.iloc[1]).drop([0,1]).set_index('#')
 
 	input_col_name = [x.strip() for x in df_model.columns if ('element name' in x.lower())]
-	input_col_ids = [x.strip() for x in df_model.columns if ('ids' in x.lower())]
+	input_col_ids = [x.strip() for x in df_model.columns if ('element ids' in x.lower())]
 	input_col_type = [x.strip() for x in df_model.columns if ('element type' in x.lower())]
 	input_col_X = [x.strip() for x in df_model.columns if ('variable' in x.lower())]
-	input_col_A = [x.strip() for x in df_model.columns if ('positive' in x.lower())]
-	input_col_I = [x.strip() for x in df_model.columns if ('negative' in x.lower())]
+	input_col_A = [x.strip() for x in df_model.columns if ('positive regulation rule' in x.lower())]
+	input_col_I = [x.strip() for x in df_model.columns if ('negative regulation rule' in x.lower())]
 
 	# set index to variable name column
 	# remove empty variable names
@@ -666,7 +669,7 @@ def get_model(model_file: str):
 
 	for curr_row in df_model.index:
 		element_name = df_model.loc[curr_row,input_col_name[-1]].strip()
-		ids = df_model.loc[curr_row,input_col_ids[0]].strip().upper().split(',')
+		ids = str(df_model.loc[curr_row,input_col_ids[0]]).strip().upper().split(',')
 		element_type = df_model.loc[curr_row,input_col_type[0]].strip()
 		var_name = df_model.loc[curr_row,input_col_X[0]].strip()
 		pos_regulators = df_model.loc[curr_row,input_col_A[0]].strip()
@@ -714,9 +717,9 @@ def getVariableName(model_dict, curr_map, ext_element_info):
 
 	global _VALID_CHARS
 
-	ext_element_name = ext_element_info[0]
-	#print(ext_element_name)
-	#print(ext_element_info)
+	ext_element_name= ext_element_info[0]
+    #FIXME: hard-coded here and lines 733/734,
+    #element name is the first in the tuple, followed by element_type, then five columns later element_id
 
 	# Check for valid element name
 	if ext_element_name=='':
@@ -726,10 +729,8 @@ def getVariableName(model_dict, curr_map, ext_element_info):
 		#logging.warn(('Skipping due to invalid characters in variable name: %s') % str(ext_element_name))
 		return ''
 
-	ext_element_id = ext_element_info[3]
-	#print(ext_element_id)
-	ext_element_type = ext_element_info[5]
-	#print(ext_element_type)
+	ext_element_id = ext_element_info[5]
+	ext_element_type = ext_element_info[1]
 
 	if ext_element_name in curr_map:
 		return curr_map[ext_element_name]

@@ -33,9 +33,8 @@ CLARINET (CLARIfying NETworks) ia a novel tool for rapid model assembly by autom
 ## I/O
 
 ### Input
-- A .xlsx file containing the model to extend, in the BioRECIPES tabular format, see [`examples/input/BooleanTcell.xlsx`](examples/input/BooleanTcell.xlsx)
-- Machine reading output file with the following header, see [`examples/input/MachineReadingOutput.csv`](examples/input/MachineReadingOutput.csv)
-RegulatedName,RegulatedID,RegulatedType,RegulatorName,RegulatorID,RegulatorType,PaperID
+- A .xlsx file containing the model to extend, in [BioRECIPES model](https://melody-biorecipe.readthedocs.io/en/latest/model_representation.html) format, see [`examples/input/BooleanTcell_biorecipe.xlsx`](examples/input/BooleanTcell_biorecipe.xlsx)
+- Machine reading output file, in [BioRECIPES interaction](https://melody-biorecipe.readthedocs.io/en/latest/bio_interactions.html) format, see [`examples/input/ReadingOutput_biorecipe.csv`](examples/input/ReadingOutput_biorecipe.csv)
 - Parameter for frequency class weighting, defined in Cell 14 of the notebook
 - Number of return paths, defined in Cell 22 of the notebook
 
@@ -82,12 +81,12 @@ Run the demonstrated example; or alternatively upload user-customized input file
 
 - [`setup.py`](setup.py): python file that help set up python dependencies installtion
 - [`src/`](src/): directory that includes core python CLARINET files
-  - [`src/runClarinet.py`](src/runClarinet.py): functions for extending discrete network models in the BioRECIPES tabular format using knowledge from literature
+  - [`src/runClarinet.py`](src/runClarinet.py): functions for extending discrete network models in the [BioRECIPE](https://melody-biorecipe.readthedocs.io) format using knowledge from literature
 - [`examples/`](examples/): directory that includes tutorial notebook and example inputs and outputs
 - [`environment.yml`](environment.yml): environment file, required by [Binder](https://mybinder.readthedocs.io/en/latest/using/config_files.html#environment-yml-install-a-conda-environment)
 - [`docs/`](docs/): containing files supporting the repo's host on [Read the Docs](https://theclarinet.readthedocs.io)
 - [`supplementary/`](supplementary): containing supplementary files for the studied model
-  - [`supplementary/TCELLgraph.graphml`](supplementary/TCELLgraph.graphml): the graphml representation of the baseline model 
+  - [`supplementary/TCELLgraph.graphml`](supplementary/TCELLgraph.graphml): the graphml representation of the baseline model
 - [`LICENSE.txt`](LICENSE.txt): MIT License
 - [`README.md`](README.md): this is me!
 
@@ -100,4 +99,4 @@ _Yasmine Ahmed, Cheryl A Telmer, Natasa Miskov-Zivanov, CLARINET: efficient lear
 This work was funded in part by DARPA Big Mechanism award, AIMCancer (W911NF-17-1-0135); and in part by the University of Pittsburgh, Swanson School of Engineering.
 
 ## Support
-_To be updated_
+Feel free to reach out via email nmzivanov@pitt.edu for additional support if you run into any error.

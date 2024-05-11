@@ -25,6 +25,7 @@ setup(
         'python-louvain',
         'seaborn',
         'rst2pdf',
+        'openpyxl',
         'tornado'
     ],
     zip_safe=False # install as directory

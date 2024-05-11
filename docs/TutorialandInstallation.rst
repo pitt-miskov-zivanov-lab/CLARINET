@@ -41,8 +41,8 @@ Input and Output
 ########################
 
 Input includes:
-  * a .xlsx file containing the model to extend, in the BioRECIPES tabular format, `see example <https://github.com/pitt-miskov-zivanov-lab/CLARINET/blob/main/examples/input/BooleanTcell.xlsx>`_
-  * a machine reading output file with the following header, `see example <https://github.com/pitt-miskov-zivanov-lab/CLARINET/blob/main/examples/input/MachineReadingOutput.csv>`_ |br| RegulatedName, RegulatedID, RegulatedType, RegulatorName, RegulatorID, RegulatorType, PaperID
+  * a .xlsx file containing the model to extend, in `BioRECIPES <https://melody-biorecipe.readthedocs.io/en/latest/model_representation.html>`_ model format, `see example <https://github.com/pitt-miskov-zivanov-lab/CLARINET/blob/main/examples/input/BooleanTcell_biorecipe.xlsx>`_
+  * a machine reading output file, in `BioRECIPES <https://melody-biorecipe.readthedocs.io/en/latest/bio_interactions.html>`_ interaction format, `see example <https://github.com/pitt-miskov-zivanov-lab/CLARINET/blob/main/examples/input/ReadingOutput_biorecipe.csv>`_
   * number of return paths
   * a parameter for frequency class
 

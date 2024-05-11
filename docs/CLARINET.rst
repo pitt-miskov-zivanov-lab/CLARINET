@@ -1,13 +1,8 @@
-.. CLARINET documentation master file, created by
-   sphinx-quickstart on Wed May 19 13:37:15 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Functions
 ===================================================
 This page provides a detailed documentation of the CLARINET functions, defined under (:py:mod:`runClarinet`).
 
-creating ECLG from INDRA
+creating ECLG from BioRECIPE
 -----------------------------
 .. currentmodule:: runClarinet
 .. autofunction:: create_eclg

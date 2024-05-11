@@ -1,8 +1,3 @@
-.. CLARINET documentation master file, created by
-   sphinx-quickstart on Wed May 19 13:37:15 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to CLARINET's documentation!
 ====================================
 .. image:: https://readthedocs.org/projects/melody-clarinet/badge/?version=latest
@@ -24,7 +19,7 @@ CLARINET architecture
 (Left) CLARINET inputs: Extracted Event Set (EES) and Baseline model. |br|
 (Right) Flow diagram of the CLARINET processing steps and outputs.
 
-.. image:: CLARINET1.png
+.. image:: CLARINET.png
 
 Applications
 ------------
