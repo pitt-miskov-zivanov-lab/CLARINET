@@ -84,7 +84,7 @@ Run the demonstrated example; or alternatively upload user-customized input file
   - [`src/runClarinet.py`](src/runClarinet.py): functions for extending discrete network models in the [BioRECIPE](https://melody-biorecipe.readthedocs.io) format using knowledge from literature
 - [`examples/`](examples/): directory that includes tutorial notebook and example inputs and outputs
 - [`environment.yml`](environment.yml): environment file, required by [Binder](https://mybinder.readthedocs.io/en/latest/using/config_files.html#environment-yml-install-a-conda-environment)
-- [`docs/`](docs/): containing files supporting the repo's host on [Read the Docs](https://theclarinet.readthedocs.io)
+- [`docs/`](docs/): containing files supporting the repo's host on [Read the Docs](https://melody-clarinet.readthedocs.io)
 - [`supplementary/`](supplementary): containing supplementary files for the studied model
   - [`supplementary/TCELLgraph.graphml`](supplementary/TCELLgraph.graphml): the graphml representation of the baseline model
 - [`LICENSE.txt`](LICENSE.txt): MIT License
